@@ -1,6 +1,100 @@
 {
   "Course-list": [
+    {
+      "University": "SU",
+      "Department": "130",
+      "CourseCode": "US271F",
+      "CourseTitle": "Svenska och didaktik i förskoleklass och årskurs 1-6, I - Svenskämnet och språkstruktur",
+      "ECTS-credits": "7,5",
+      "ValidFrom": "2023:2",
+      "CourseContent": "I kursen behandlas svenskämnets roll i skola och samhälle. Styrdokument och läromedel diskuteras utifrån literacyperspektiv och med beaktande av elevers varierande språkbakgrund. Centrala drag i svenska språkets fonologi, stavning, morfologi och syntax i relation till undervisning i svenskämnet behandlas liksom analys av elevtexter utifrån språkdidaktiska och språkvetenskapliga perspektiv. I kursen ingår även att läsa och diskutera skönlitteratur för barn. Kommunikation i akademiska och för professionen relevanta sammanhang tas upp i kursen.",
+      "ILO-sv": "\"För godkänt resultat på kursen ska studenten kunna  - diskutera svenskämnets roll i skola och samhälle, - diskutera styrdokument och läromedel utifrån ett literacyperspektiv, - redogöra för viktiga egenskaper hos svenskans fonologiska system och principerna bakom svenskans stavningsregler, - redogöra för viktiga drag i svenskans morfologi och syntax, - utföra elementära analyser av elevtexter utifrån språkdidaktiska och språkvetenskapliga perspektiv, - diskutera hur skönlitteratur för barn kan användas i undervisningen, - visa akademisk och för professionen adekvat kommunikativ förmåga.\"",
+      "ILO-en": "",
+      "SCB-ID": "UV2",
+      "CourseLevel-ID": "G1N",
+      "Prerequisites-sv": "\"Grundläggande behörighet.\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Du ska kunna diskutera svenskämnets roll i skola och samhälle .",
+        "Du ska kunna diskutera styrdokument och läromedel utifrån ett literacyperspektiv .",
+        "Du ska kunna redogöra för viktiga egenskaper hos svenskans fonologiska system och principerna bakom svenskans stavningsregler .",
+        "Du ska kunna redogöra för viktiga drag i svenskans morfologi och syntax .",
+        "Du ska kunna utföra elementära analyser av elevtexter utifrån språkdidaktiska och språkvetenskapliga perspektiv .",
+        "Du ska kunna diskutera hur skönlitteratur för barn kan användas i undervisningen .",
+        "Du ska kunna visa akademisk och för professionen adekvat kommunikativ förmåga ."
+      ],
+      "ILO-relation": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "ILO-list-en": []
+    },
+    {
+      "University": "SU",
+      "Department": "318",
+      "CourseCode": "UB201A",
+      "CourseTitle": "Individens utveckling och socialisation",
+      "ECTS-credits": "7,5",
+      "ValidFrom": "2015:1",
+      "CourseContent": "Kursen fokuserar huvudsakligen barns och ungas utveckling och socialisation, barnperspektiv samt barns perspektiv inom området barn- och ungdomsvetenskap. Under kursen granskas kunskapsutvecklingen inom området kritiskt, dels självständigt, dels tillsammans med andra, utifrån egna och andras erfarenheter samt relevant forskning.   I kursen bearbetas en fallbeskrivning med hjälp av olika teoretiska begrepp och perspektiv. Studenterna får även lära sig om och träna på deltagande observation som forskningsmetod. Den verksamhetsförlagda utbildningen  innefattar observationer.",
+      "ILO-sv": "\"Efter genomgången kurs förväntas studenten kunna • beskriva, jämföra och kritiskt granska olika vetenskapliga begrepp, teorier och perspektiv på individens utveckling och socialisation och därvid särskilt beakta barns och ungdomars egna perspektiv • diskutera konsekvenserna av att utgå från olika vetenskapliga perspektiv  • planera och genomföra en mindre observationsstudie av barns och ungdomars vardag i förskola/skola/fritidshem  • beskriva och diskutera metodfrågor med fokus på deltagande observation, samt • visa förmåga att använda digitala verktyg i den pedagogiska verksamheten.\"",
+      "ILO-en": "",
+      "SCB-ID": "UV1",
+      "CourseLevel-ID": "\\N",
+      "Prerequisites-sv": "\"För tillträde till kursen gäller att studenten ska vara godkänd på minst 60 högskolepoäng av 90 möjliga högskolepoäng. 30 högskolepoäng ska vara godkända inom det allmänna utbildningsområdet, block 1, resterande 30 högskolepoäng ska vara godkända inom en inriktning.  Studenten i Kombinationsutbildningen ska ha fullgjort 90 högskolepoäng i sitt huvudämne samt 60 högskolepoäng i sitt andra ämne. Studenten i kompletterande pedagogisk utbildning ska vara antagen till denna variant av lärarprogrammet.\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Du ska kunna beskriva, jämföra och kritiskt granska olika vetenskapliga begrepp, teorier och perspektiv på individens utveckling och socialisation och därvid särskilt beakta barns och ungdomars egna perspektiv .",
+        "Du ska kunna diskutera konsekvenserna av att utgå från olika vetenskapliga perspektiv .",
+        "Du ska kunna planera och genomföra en mindre observationsstudie av barns och ungdomars vardag i förskola/skola/fritidshem .",
+        "Du ska kunna beskriva och diskutera metodfrågor med fokus på deltagande observation, samt .",
+        "Du ska kunna visa förmåga att använda digitala verktyg i den pedagogiska verksamheten ."
+      ],
+      "ILO-relation": [
+        2,
+        1,
+        2,
+        2,
+        0
+      ],
+      "ILO-list-en": []
+    },
+    {
+      "University": "SU",
+      "Department": "308",
+      "CourseCode": "PSPR41",
+      "CourseTitle": "Familjens psykologi",
+      "ECTS-credits": "7,5",
+      "ValidFrom": "2022:1",
+      "CourseContent": "Kursen utgör en teoretisk fördjupning inom psykologisk utredning och behandling av barn och ungdomar med särskilt fokus på olika aspekter av familjen som en viktig kontext för den aktuella åldersgruppen. Betydelsen av familjen som kontext för barn och unga belyses genom olika undervisningsmoment, till exempel genom arbete med fall i utredning och behandling och föreläsning om våld i familjen. Kursen ger fördjupade kunskaper av relevans för det framtida yrkesarbetet som psykolog.",
+      "ILO-sv": "\"Efter genomgången kurs skall studenten kunna   • redovisa fördjupade kunskaper och färdigheter inom psykologisk utredning och behandling av barn och unga med särskilt fokus på familjen som kontext  • redovisa och värdera aktuell forskning kring familjen som kontext i relation till utredning och behandling av barn och unga  • kritisk reflektera över kunskapens bidrag till fältet dels inom forskning men också avseende terapeutisk behandling och klinisk utredning  • visa förståelse av specifika begrepp inom området\"",
+      "ILO-en": "",
+      "SCB-ID": "PS1",
+      "CourseLevel-ID": "A1F",
+      "Prerequisites-sv": "\"210 hp inom Psykologprogrammet. Engelska 6 och Svenska 3.\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Du ska kunna redovisa fördjupade kunskaper och färdigheter inom psykologisk utredning och behandling av barn och unga med särskilt fokus på familjen som kontext .",
+        "Du ska kunna redovisa och värdera aktuell forskning kring familjen som kontext i relation till utredning och behandling av barn och unga .",
+        "Du ska kunna kritisk reflektera över kunskapens bidrag till fältet dels inom forskning men också avseende terapeutisk behandling och klinisk utredning .",
+        "Du ska kunna visa förståelse av specifika begrepp inom området ."
+      ],
+      "ILO-relation": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "ILO-list-en": []
+    }
 
-    
      ]
 }
