@@ -7,18 +7,30 @@ import torch
 from sentence_transformers import SentenceTransformer
 
 def main():
+
+    use_chunking = True
+
+    device = torch.device('mps' if torch.mps.is_available() else 'cpu')
+    print(f'Using device: {device}')
+
     with open('data/SU.heuristics.json', 'r') as f:
+    # with open('data/SU.subset.json', 'r') as f:
         corpus = json.load(f)
     
-    model = SentenceTransformer('KBLab/sentence-bert-swedish-cased')
+    model = SentenceTransformer('KBLab/sentence-bert-swedish-cased', device=device)
 
     output = {}
 
     for course in corpus['Course-list']:
-        content_embed = model.encode(course['CourseContent'])
-        outcome_embeds = [model.encode(outcome) for outcome in course['ILO-list-sv']]
-        
-        output[course['CourseCode']] = [cosine_similarity(torch.as_tensor(content_embed), torch.as_tensor(outcome_embed), dim = 0) for outcome_embed in outcome_embeds]        
+        if use_chunking:
+            chunks = course['CourseContent'].split('. ')
+        else:
+            chunks = [course['CourseContent']]
+
+        chunk_embeds = [model.encode(chunk, convert_to_tensor=True) for chunk in chunks]
+        outcome_embeds = [model.encode(outcome, convert_to_tensor=True) for outcome in course['ILO-list-sv']]
+
+        output[course['CourseCode']] = [[cosine_similarity(chunk_embed, outcome_embed, dim = 0).item() for chunk_embed in chunk_embeds] for outcome_embed in outcome_embeds]
 
     # Custom JSON Encoder to handle pytorch tensors
     class TensorEncoder(json.JSONEncoder):
@@ -27,8 +39,8 @@ def main():
                 return obj.tolist()
             return super().default(obj)
 
-    with open('data/SU.similarities.json', 'w') as f:
-        json.dump(output, f, indent=4, cls=TensorEncoder)
+    with open('data/SU.chunked.similarities.json', 'w') as f:
+        json.dump(output, f, indent=2, cls=TensorEncoder)
 
 if __name__ == '__main__':
     main()
