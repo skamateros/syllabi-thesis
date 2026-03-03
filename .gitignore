@@ -2,6 +2,7 @@
 .DS_Store
 SU.embeddings.json
 testing.ipynb
+sv_suc_lemmatizer.pt
 
 # Should remove before publishing
 requirements.txt
