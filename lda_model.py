@@ -7,6 +7,8 @@ import torch
 from torch.nn.functional import cosine_similarity
 
 def main():
+    nlp = stanza.Pipeline(lang='sv', processors = 'tokenize,pos,lemma')
+
     nltk.download('stopwords')
     stop_words = set(nltk.corpus.stopwords.words('swedish'))
 
@@ -14,19 +16,21 @@ def main():
         corpus = json.load(f)
 
     def tokenize(text):
-        tokens = gensim.utils.simple_preprocess(text)
-        tokens = [token for token in tokens if token not in stop_words]
+        doc = nlp(text)
+        tokens = [token.lemma.lower() for sentence in doc.sentences for token in sentence.words if token.lemma.lower() not in stop_words and token.pos != 'PUNCT']
         return tokens
 
-    for course in corpus['Course-list']:
+    print('Iterating over corpus and tokenizing...')
+    for i, course in enumerate(corpus['Course-list']):
         course['CourseContent'] = tokenize(course['CourseContent'])
         course['ILO-list-sv'] = [tokenize(outcome) for outcome in course['ILO-list-sv']]
 
     texts = [course['CourseContent'] for course in corpus['Course-list']] + [outcome for course in corpus['Course-list'] for outcome in course['ILO-list-sv']]
+
     id2word = gensim.corpora.Dictionary(texts)
     model_corpus = [id2word.doc2bow(text) for text in texts]
 
-
+    print('Training LDA model...')
     lda_model = gensim.models.ldamodel.LdaModel(corpus=model_corpus,
                                             id2word=id2word,
                                             num_topics=20, 
@@ -37,10 +41,8 @@ def main():
                                             alpha='auto',
                                             per_word_topics=False)
 
-    # topics = lda_model.print_topics(num_words=10)
-    # for topic in topics:
-    #     print(topic)
     
+    print('Calculating similarities...')
     output = {}
     for course in corpus['Course-list']:
         course_bow = id2word.doc2bow(course['CourseContent'])
@@ -82,10 +84,9 @@ def main():
                 return obj.tolist()
             return super().default(obj)
 
+    print('Saving similarities to JSON...')
     with open('data/SU.lda.similarities.json', 'w') as f:
         json.dump(output, f, indent=2, cls=TensorEncoder)
-
-    # print(corpus['Course-list'][0])
 
 if __name__ == '__main__':
     main()
