@@ -7,7 +7,7 @@ from sys import argv
 from scipy.stats import spearmanr, pearsonr
 import json
 
-def correlation(f_similarities:str, f_corpus:str, method = pearsonr):
+def correlation(f_similarities:str, f_corpus:str, method = spearmanr):
     print(f"Calculating {method.__name__} correlation...")
     x1 = []
     x2 = []
@@ -21,7 +21,11 @@ def correlation(f_similarities:str, f_corpus:str, method = pearsonr):
     for course in corpus['Course-list']:
         course_code = course['CourseCode']
         if course_code in similarities:
-            x1.extend(similarities[course_code])
+            for outcome in similarities[course_code]:
+                if isinstance(outcome, list):
+                    x1.append(max(outcome))
+                else:
+                    x1.append(outcome)
             x2.extend(course["ILO-relation"])
 
     assert len(x1) == len(x2), "The two lists must have the same length"
