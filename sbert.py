@@ -8,7 +8,7 @@ from sentence_transformers import SentenceTransformer
 
 def main():
 
-    use_chunking = True
+    use_chunking = False
 
     device = torch.device('mps' if torch.mps.is_available() else 'cpu')
     print(f'Using device: {device}')
@@ -39,7 +39,7 @@ def main():
                 return obj.tolist()
             return super().default(obj)
 
-    with open('data/SU.chunked.similarities.json', 'w') as f:
+    with open('data/SU.sbert.similarities.json', 'w') as f:
         json.dump(output, f, indent=2, cls=TensorEncoder)
 
 if __name__ == '__main__':

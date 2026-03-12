@@ -94,6 +94,223 @@
         1
       ],
       "ILO-list-en": []
+    },
+    {
+      "University": "SU",
+      "Department": "460",
+      "CourseCode": "BL2031",
+      "CourseTitle": "Organismernas mångfald och evolution",
+      "ECTS-credits": "15",
+      "ValidFrom": "2022:1",
+      "CourseContent": "a. Kursen behandlar livets uppkomst och utveckling samt de viktigaste organismgruppernas byggnad, levnadssätt, mångfald och fylogeni. Kursen behandlar även de viktigaste evolutionära processerna som ligger till grund för organismernas mångfald och fylogeni samt hur vår förståelse av dessa processer har ändrats genom tiden.  De flesta organismgrupper behandlas på kursen men delkurserna kallas av praktiska skäl för ”botanik” respektive ”zoologi”.     b. Kursen består av följande delar: • Del 1, Botanik (Botany), 7,5 hp • Del 2, Zoologi (Zoology), 6 hp • Del 3, Evolutionsteori (Evolutionary Theory) 1,5 hp",
+      "ILO-sv": "\"Efter att ha genomgått kursen förväntas studenten   *kunna redogöra för de viktigaste organismgrupperna, inklusive deras byggnad, levnadssätt, mångfald och fylogeni (del 1, 2) * kunna redogöra för organismernas historia på jorden (del 1, 2, 3) * kunna redogöra för de viktigaste evolutionära processerna samt tolka och förstå vikten av fylogenier (del 3) * kunna mikroskopera (del 1, 2) och dissekera (del 2).\"",
+      "ILO-en": "",
+      "SCB-ID": "BI1",
+      "CourseLevel-ID": "G1N",
+      "Prerequisites-sv": "\"Biologi B/Biologi 2 och Kemi B/Kemi 2.\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Du ska kunna redogöra för de viktigaste organismgrupperna, inklusive deras byggnad, levnadssätt, mångfald och fylogeni (del 1, 2)",
+        "Du ska kunna redogöra för organismernas historia på jorden (del 1, 2, 3)",
+        "Du ska kunna redogöra för de viktigaste evolutionära processerna samt tolka och förstå vikten av fylogenier (del 3)",
+        "Du ska kunna mikroskopera (del 1, 2) och dissekera (del 2)"
+      ],
+      "ILO-relation": [
+        2,
+        2,
+        2,
+        0
+      ],
+      "ILO-list-en": []
+    },
+    {
+      "University": "SU",
+      "Department": "104",
+      "CourseCode": "HI2902",
+      "CourseTitle": "Historia: Fördjupad temakurs för utbytesstudenter II",
+      "ECTS-credits": "7,5",
+      "ValidFrom": "2021:2",
+      "CourseContent": "Kursen ger fördjupade kunskaper om några utvalda historiska problemområden. Den studerande väljer en tematiskt inriktad kurs inom ett historiskt problemområde, t.ex. politisk och ekonomisk utveckling, social utveckling eller kulturell utveckling. Till varje tema finns en utarbetad litteraturlista. I kursen får den studerande fördjupade kunskaper inom kursens tematik och inblickar i aktuella forskningsrön och forskningsfrågor.  För information om de valbara tematiska fördjupningsområdena under aktuell termin hänvisas till kurssidan på Athena: athena.su.se. Informationen finns tillgänglig senast en månad före kursstart.",
+      "ILO-sv": "\"Efter genomgången kurs ska studenten  - ha förvärvat fördjupade kunskaper om den valda tidsperioden och området; - kunna muntligen och skriftligen redogöra för, analysera och diskutera problemområden och historiska frågor utifrån vetenskaplig litteratur.\"",
+      "ILO-en": "",
+      "SCB-ID": "HI2",
+      "CourseLevel-ID": "GXX",
+      "Prerequisites-sv": "\"Antagen till utbytesstudier\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Du ska ha förvärvat fördjupade kunskaper om den valda tidsperioden och området .",
+        "Du ska kunna muntligen och skriftligen redogöra för, analysera och diskutera problemområden och historiska frågor utifrån vetenskaplig litteratur ."
+      ],
+      "ILO-relation": [
+        2,
+        2
+      ],
+      "ILO-list-en": []
+    },
+    {
+      "University": "SU",
+      "Department": "172",
+      "CourseCode": "JKB442",
+      "CourseTitle": "Koreanska IV",
+      "ECTS-credits": "22,5",
+      "ValidFrom": "2023:1",
+      "CourseContent": "Kursen befäster och fördjupar kunskaperna i det nutida koreanska språket samt gör de studerande förtrogna med sådana koreanska och västerländska handböcker som är viktiga hjälpmedel för studier av olika aspekter av det nutida Koreas kultur och samhälle.  Kursen består av följande delar:  - Läsfärdighet 1, 7,5 hp  Delkursen befäster och fördjupar kunskaperna i koreansk grammatik samt övar upp textläsningsförmågan. Den består av textläsning som omfattar grammatisk analys och textanalys.  - Läsfärdighet 2, 7,5 hp  Med utgångspunkt i delkursen Läsfärdighet 1 befäster och fördjupar Läsfärdighet 2 ytterligare kunskaperna i koreansk grammatik och övar upp textläsningsförmågan. Den består av textläsning som omfattar grammatisk analys och textanalys.  - Praktisk språkfärdighet 4, 7,5 hp  Delkursen befäster och fördjupar studenternas hörförståelse liksom kunskaper i talad koreanska om bekanta samhällsrelaterade ämnen på medelnivå. Studenterna tränar också på att skriva förklarande texter med förståelse för deras funktioner.",
+      "ILO-sv": "\"För godkänt resultat på delkurs Läsfärdighet 1, 7,5 hp, ska studenten kunna - analysera koreansk grammatik - läsa och analysera koreansk sakprosa  För godkänt resultat på delkurs Läsfärdighet 2, 7,5 hp, ska studenten kunna - analysera koreansk grammatik på en fördjupad nivå - läsa och analysera mer avancerad koreansk sakprosa  För godkänt resultat på delkurs Praktisk språkfärdighet 4, 7,5 hp, ska studenten kunna  - läsa, förstå samt skriva förklarande texter om allmänna samhällsrelaterade frågor - redogöra för skillnaderna mellan talade och skrivna texter\"",
+      "ILO-en": "",
+      "SCB-ID": "KO1",
+      "CourseLevel-ID": "G2F",
+      "Prerequisites-sv": "\"Koreanska I, 30 hp och Koreanska II, 22,5 hp samt 15 hp av Koreanska III, 22,5 hp, eller motsvarande.\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Du ska kunna analysera koreansk grammatik .",
+        "Du ska kunna läsa och analysera koreansk sakprosa .",
+        "Du ska kunna analysera koreansk grammatik på en fördjupad nivå .",
+        "Du ska kunna läsa och analysera mer avancerad koreansk sakprosa .",
+        "Du ska kunna läsa, förstå samt skriva förklarande texter om allmänna samhällsrelaterade frågor .",
+        "Du ska kunna redogöra för skillnaderna mellan talade och skrivna texter ."
+      ],
+      "ILO-relation": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "ILO-list-en": []
+    },
+    {
+      "University": "SU",
+      "Department": "220",
+      "CourseCode": "JU70FF",
+      "CourseTitle": "Etik för jurister",
+      "ECTS-credits": "15",
+      "ValidFrom": "2022:1",
+      "CourseContent": "Den övergripande målsättningen med kursen är att ge yrkesverksamma jurister och juris studerande på avancerad nivå en överblick över vissa centrala delar av ämnet etik och en ökad förståelse för det etiska arbetssättet och etikens funktion i samhället, men även som ett instrument för liksom en position i juristens praktiska arbete.  Kursen ger en etisk allmänbildning och orientering i yrkeslivet för jurister, och utgör samtidigt en ytterligare god grund för studier i juridik. Kursen inleds med en orientering i etikens principer och strukturer och grundläggande källor, med relevans för jurister.",
+      "ILO-sv": "\"Kunskap och förståelse Efter genomgången kurs förväntas studenten kunna  - visa kunskap i och förståelse för etiken och etiska ställningstaganden, - visa kunskap i och förståelse för etiska positioner, - visa kännedom om etiken som grundläggande faktor i samhällslivet och - visa kännedom om etiken som grundläggande faktor i affärslivet.  Färdighet och förmåga Efter genomgången kurs förväntas studenten kunna  - visa förmåga att med hjälp av relevanta etiska positioner lösa etiska problem inom kursens sakområde, - visa förmåga att självständigt analysera etiska frågeställningar och argumentation och - självständigt planera och genomföra en arbetsuppgift inom givna tidsramar.  Värderingsförmåga och förhållningssätt Efter genomgången kurs förväntas studenten kunna - bedöma juridiska frågeställningar med hänsyn till etiska frågor.\"",
+      "ILO-en": "",
+      "SCB-ID": "JU1",
+      "CourseLevel-ID": "A1N",
+      "Prerequisites-sv": "\"För tillträde till undervisning och examination krävs godkända godkända tentamina på obligatoriska kurser om minst 150 högskolepoäng inom juristprogrammet, alternativt en Filosofie kandidat-examen i rättsvetenskap. Kunskaper i engelska motsvarande Engelska B/Engelska 6. Tillträde bereds även utbytesstudenter som är antagna vid juridiska institutionen, Stockholms universitet.\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Du ska kunna visa kunskap i och förståelse för etiken och etiska ställningstaganden .",
+        "Du ska kunna visa kunskap i och förståelse för etiska positioner .",
+        "Du ska kunna visa kännedom om etiken som grundläggande faktor i samhällslivet .",
+        "Du ska kunna visa kännedom om etiken som grundläggande faktor i affärslivet .",
+        "Du ska kunna visa förmåga att med hjälp av relevanta etiska positioner lösa etiska problem inom kursens sakområde .",
+        "Du ska kunna visa förmåga att självständigt analysera etiska frågeställningar och argumentation .",
+        "Du ska kunna självständigt planera och genomföra en arbetsuppgift inom givna tidsramar .",
+        "Du ska kunna bedöma juridiska frågeställningar med hänsyn till etiska frågor ."
+      ],
+      "ILO-relation": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        2
+      ],
+      "ILO-list-en": []
+    },
+    {
+      "University": "SU",
+      "Department": "403",
+      "CourseCode": "MM7032",
+      "CourseTitle": "Spektralgeometri för grafer",
+      "ECTS-credits": "7,5",
+      "ValidFrom": "2022:1",
+      "CourseContent": "Kursen ger en introduktion till geometrin av metriska grafer och deras spektrala egenskaper.  Specifikt innehåll: Metrisk graf som singulär mångfald, differentialoperatorer på grafer, karakteristiska ekvationen och spektrum, kirurgi av grafer, Laplace-operatorn på metriska grafer, spårformeln, topologi och spektrum, reducerbarhet av sekulära polynom, diofantisk analys och spektrumets aritmetiska struktur, nästan periodiska funktioner och Ambarstumians satser, introduktion till inversa problem, stabila polynom och kristallina mått.",
+      "ILO-sv": "\"Efter att ha genomgått kursen förväntas studenten kunna   -- formulera och bevisa grundläggande satser om  Laplacianer på metriska grafer; -- analysera spektrums beteende vid enkla förändringar av grafer; -- analysera reducerbarhet av polynom i flera variabler; -- analysera spektrums aritmetiska egenskaper.\"",
+      "ILO-en": "",
+      "SCB-ID": "MA1",
+      "CourseLevel-ID": "A1N",
+      "Prerequisites-sv": "\"För tillträde till kursen krävs kunskaper motsvarande Matematik II - Algebra och kombinatorik, 7.5 hp (MM5013), samt Matematik III - Analysens grunder, 7.5 hp (MM5021). Engelska 6 eller motsvarande.\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Du ska kunna formulera och bevisa grundläggande satser om Laplacianer på metriska grafer .",
+        "Du ska kunna analysera spektrums beteende vid enkla förändringar av grafer .",
+        "Du ska kunna analysera reducerbarhet av polynom i flera variabler .",
+        "Du ska kunna analysera spektrums aritmetiska egenskaper ."
+      ],
+      "ILO-relation": [
+        2,
+        1,
+        2,
+        2
+      ],
+      "ILO-list-en": []
+    },
+    {
+      "University": "SU",
+      "Department": "312",
+      "CourseCode": "AKA131",
+      "CourseTitle": "Kriminologins kontroverser",
+      "ECTS-credits": "7,5",
+      "ValidFrom": "2022:1",
+      "CourseContent": "Den kriminologiska disciplinen har sedan begynnelsen präglats av en serie spänningar, eller kontroverser, som berör flera av ämnets centrala frågor: Vad är brott? Var återfinns brottslighetens ursprung, är det i individen eller i miljön? Hur bör kriminologisk forskning bedrivas? Kan kriminologin vara värdeneutral, och om den kan vara det – bör den vara det? Hur bör samhället förhålla sig till brottsligheten, och vad är kriminologins – och kriminologens – roll i den diskussionen?   I denna kurs möter studenten kriminologin som ett ständigt spänningsfält, där avgörande frågor om brott, avvikelse och dess reaktioner blir placerade i sin historiska kontext men också koncentrerade till samtiden. Genom att undersöka en uppsättning av kriminologins centrala spörsmål, syftar kursen till att ge studenten en djupare förståelse för kriminologins utveckling och var ämnet befinner sig idag. Kursen har också en självreflexiv dimension, där studentens eget förhållningssätt gentemot kriminologins kontroverser belyses, diskuteras och utvecklas.",
+      "ILO-sv": "\"För godkänt resultat på kursen ska studenten kunna   1.Beskriva och diskutera centrala kontroverser inom den kriminologiska disciplinen, inklusive deras kontexter och möjlighetsvillkor.  2.Jämföra och pröva de olika positionerna inom varje kontrovers.  3.Analysera och kritiskt granska varje positions teoretiska anspråk och empiriska bakgrund.  4.Syntetisera kursens innehåll i en utveckling och fördjupning av studentens eget perspektiv på kriminologin som ämne, och kriminologen som gestalt.\"",
+      "ILO-en": "",
+      "SCB-ID": "KR1",
+      "CourseLevel-ID": "A1N",
+      "Prerequisites-sv": "\"Kandidatexamen med minst 90 hp i samhällsvetenskapligt huvudområde, eller motsvarande. Svenska 3 och Engelska 6.\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Beskriva och diskutera centrala kontroverser inom den kriminologiska disciplinen, inklusive deras kontexter och möjlighetsvillkor .",
+        "Jämföra och pröva de olika positionerna inom varje kontrovers .",
+        "Analysera och kritiskt granska varje positions teoretiska anspråk och empiriska bakgrund .",
+        "Syntetisera kursens innehåll i en utveckling och fördjupning av studentens eget perspektiv på kriminologin som ämne, och kriminologen som gestalt ."
+      ],
+      "ILO-relation": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "ILO-list-en": []
+    },
+    {
+      "University": "SU",
+      "Department": "323",
+      "CourseCode": "ML271N",
+      "CourseTitle": "Skalbar och ansvarsfull AI i organisationer",
+      "ECTS-credits": "7,5",
+      "ValidFrom": "2022:1",
+      "CourseContent": "Kursens övergripande mål är att ge studenten kunskap och verktyg för att resonera kring ansvarsfull AI i ett organisatoriskt sammanhang.  Kursen behandlar etiska aspekter kring ansvarsfull AI ur både designers och användares perspektiv. Kursen behandlar även integritetsfrågor samt strategier och integritetsbevarande mekanismer för att följa juridiska regelverk. Ett annat viktigt ämne är att identifiera och hantera bias i algoritmer och data.  Kursen omfattar även användningen av AI i ett organisatoriskt sammanhang, inklusive att identifiera och ta itu med utmaningar när man implementerar AI i organisationen. För att framgångsrikt implementera AI i organisationer krävs processtöd för identifiering av lämpliga tillämpningsområden, utformning och implementering av skalbara lösningar, men även för driftsättning samt kontinuerlig övervakning och underhåll av till exempel maskininlärningsmodeller.",
+      "ILO-sv": "\"För godkänt resultat på kursen ska studenten kunna  - beskriva utmaningarna och möjligheterna med att implementera AI i organisationer - beskriva och tillämpa processer för att implementera AI i organisationer - beskriva och analysera ansvarsfull AI ur både designer- och användarperspektiv - identifiera etiska hinder och integritetsaspekter vid implementering av AI i organisationer - föreslå strategier för att följa juridiska regelverk vid databehandling - beskriva strategier för att identifiera och motverka bias i data och algoritmer - identifiera och tillämpa lämpliga skalbara tekniker utformade för massiva datamängder, t.ex. genom analys av strömmande data eller grafdata\"",
+      "ILO-en": "",
+      "SCB-ID": "IF1",
+      "CourseLevel-ID": "A1N",
+      "Prerequisites-sv": "\"90 hp data- och systemvetenskap inklusive minst 7,5 hp om NoSQL-databaser (t.ex. kursen Big Data med NoSQL-databaser 7,5 hp) eller motsvarande. Engelska 6 (eller motsvarande).\"",
+      "Prerequisites-en": "",
+      "CourseType": "grundutbildning",
+      "ILO-list-sv": [
+        "Du ska kunna beskriva utmaningarna och möjligheterna med att implementera AI i organisationer .",
+        "Du ska kunna beskriva och tillämpa processer för att implementera AI i organisationer .",
+        "Du ska kunna beskriva och analysera ansvarsfull AI ur både designer- och användarperspektiv .",
+        "Du ska kunna identifiera etiska hinder och integritetsaspekter vid implementering av AI i organisationer .",
+        "Du ska kunna föreslå strategier för att följa juridiska regelverk vid databehandling .",
+        "Du ska kunna beskriva strategier för att identifiera och motverka bias i data och algoritmer .",
+        "Du ska kunna identifiera och tillämpa lämpliga skalbara tekniker utformade för massiva datamängder, t.ex. genom analys av strömmande data eller grafdata ."
+      ],
+      "ILO-relation": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "ILO-list-en": []
     }
 
      ]

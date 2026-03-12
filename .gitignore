@@ -3,6 +3,7 @@
 SU.embeddings.json
 testing.ipynb
 sv_suc_lemmatizer.pt
+plot.py
 
 # Should remove before publishing
 requirements.txt
