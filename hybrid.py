@@ -15,7 +15,7 @@ def hybridize(file1: str, file2: str, output_file: str = None) -> dict:
     new_sim = {}
     for course_code in sim_json1:
         if course_code in sim_json2:
-            new_sim[course_code] = [(sim1 + sim2) / 2 for sim1, sim2 in zip([max(sim) for sim in sim_json1[course_code]], [max(sim) for sim in sim_json2[course_code]])]
+            new_sim[course_code] = [[(sim1 + sim2) / 2] for sim1, sim2 in zip([max(sim) for sim in sim_json1[course_code]], [max(sim) for sim in sim_json2[course_code]])]
     
     if output_file is not None:
         with open(output_file, 'w') as f4:
