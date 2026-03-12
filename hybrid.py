@@ -1,18 +1,21 @@
+# Run as such:
+# python3 hybrid.py {sim_file1} {sim_file2} {optional: output_file}
+
 import correlation
 import json
 from sys import argv
 
-def hybridize(file1: str, file2: str, output_file: str = None):
+def hybridize(file1: str, file2: str, output_file: str = None) -> dict:
     with open(file1, 'r') as f1:
-        sbert_sim = json.load(f1)
+        sim_json1 = json.load(f1)
 
     with open(file2, 'r') as f2:
-        tfidf_sim = json.load(f2)
+        sim_json2 = json.load(f2)
     
     new_sim = {}
-    for course_code in sbert_sim:
-        if course_code in tfidf_sim:
-            new_sim[course_code] = [(sim1 + sim2) / 2 for sim1, sim2 in zip([max(sim) for sim in sbert_sim[course_code]], [max(sim) for sim in tfidf_sim[course_code]])]
+    for course_code in sim_json1:
+        if course_code in sim_json2:
+            new_sim[course_code] = [(sim1 + sim2) / 2 for sim1, sim2 in zip([max(sim) for sim in sim_json1[course_code]], [max(sim) for sim in sim_json2[course_code]])]
     
     if output_file is not None:
         with open(output_file, 'w') as f4:
