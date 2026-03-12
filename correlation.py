@@ -7,16 +7,21 @@ from sys import argv
 from scipy.stats import spearmanr, pearsonr
 import json
 
-def correlation(f_similarities:str, f_corpus:str, method = spearmanr):
+def correlation(f_similarities, f_corpus, method = spearmanr):
     print(f"Calculating {method.__name__} correlation...")
     x1 = []
     x2 = []
 
-    with open(f_similarities, 'r') as f1:
-        similarities = json.load(f1)
-
-    with open(f_corpus, 'r') as f2:
-        corpus = json.load(f2)
+    if isinstance(f_similarities, str):
+        with open(f_similarities, 'r') as f1:
+            similarities = json.load(f1)
+    elif isinstance(f_similarities, dict):
+        similarities = f_similarities
+    if isinstance(f_corpus, str):
+        with open(f_corpus, 'r') as f2:
+            corpus = json.load(f2)
+    elif isinstance(f_corpus, dict):
+        corpus = f_corpus
         
     for course in corpus['Course-list']:
         course_code = course['CourseCode']

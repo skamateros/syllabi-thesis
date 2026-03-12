@@ -7,15 +7,8 @@ import torch
 from torch.nn.functional import cosine_similarity
 
 def main():
-    nlp = stanza.Pipeline(lang='sv', processors = 'tokenize,pos,lemma')
-
-    nltk.download('stopwords')
-    stop_words = set(nltk.corpus.stopwords.words('swedish'))
-
-    with open('data/SU.heuristics.json', 'r') as f:
+    with open('data/SU.lemmatized.json', 'r') as f:
         corpus = json.load(f)
-
-    print('Tokenizing and lemmatizing corpus...')
 
     all_texts = []
     for course in corpus['Course-list']:
@@ -24,15 +17,6 @@ def main():
         all_texts.append(course['CourseContent'])
         all_texts.extend(course['ILO-list-sv'])
     
-    docs = nlp.bulk_process(all_texts)
-
-    idx = 0
-    for course in corpus['Course-list']:
-        course['CourseContent'] = [token.lemma.lower() for sent in docs[idx].sentences for token in sent.words if token.pos != 'PUNCT' and token.lemma.lower() not in stop_words]
-        idx += 1
-        course['ILO-list-sv'] = [[token.lemma.lower() for token in docs[idx + j].sentences[0].words if token.pos != 'PUNCT' and token.lemma.lower() not in stop_words] for j in range(len(course['ILO-list-sv']))]
-        idx += len(course['ILO-list-sv'])
-
     texts = [course['CourseContent'] for course in corpus['Course-list']] + [outcome for course in corpus['Course-list'] for outcome in course['ILO-list-sv']]
 
     id2word = gensim.corpora.Dictionary(texts)
@@ -82,7 +66,7 @@ def main():
 
             # print(f"Outcome: {outcome}")
             # print(f"Outcome topic distribution: {outcome_topics}")
-            similarities.append(cosine_similarity(torch.tensor(course_topic_distribution), torch.tensor(outcome_topic_distribution), dim=0).item())
+            similarities.append([cosine_similarity(torch.tensor(course_topic_distribution), torch.tensor(outcome_topic_distribution), dim=0).item()])
         output[course['CourseCode']] = similarities
 
     # Custom JSON Encoder to handle pytorch tensors

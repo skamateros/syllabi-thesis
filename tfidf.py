@@ -30,7 +30,7 @@ def main():
         for outcome in course['ILO-list-sv']:
             outcome_vec = vectorizer.transform([tokens2string(outcome)])
             similarity = cosine_similarity(course_vec, outcome_vec)[0][0]
-            similarities.append(similarity)
+            similarities.append([similarity])
         
         output[course['CourseCode']] = similarities
 
