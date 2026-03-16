@@ -1,7 +1,7 @@
 # Run as such:
 # python3 correlation.py {pearsonr/spearmanr} {similarities_file} {corpus_file}
 
-# python3 correlation.py pearsonr data/SU.similarities.json data/SU.subset.json
+# python3 correlation.py spearmanr data/SU.similarities.json data/SU.subset.json
 
 from sys import argv
 from scipy.stats import spearmanr, pearsonr

@@ -6,7 +6,7 @@
 108 Institutionen för arkeologi och antikens kultur
 120 Institutionen för mediestudier
 122 Accelerator
-130 Institutionen för ämnesdidaktik (sammanslagning av inst. 121, 161, 408 från 1/1-22)
+130 Institutionen för ämnesdidaktik
 150 Engelska institutionen
 153 Institutionen för lingvistik
 154 Institutionen för svenska och flerspråkighet
@@ -41,7 +41,7 @@
 404 Meteorologiska institutionen (MISU)
 405 Internationella meteorologiska institutionen
 431 Institutionen för biokemi och biofysik (DBB)
-434 Kemikum (sammanslagning av inst 432 och 433 från 2025-01-01)
+434 Kemikum
 460 Institutionen för biologisk grundutbildning (BIG)
 463 Institutionen för naturgeografi
 464 Institutionen för geologiska vetenskaper (IGV)

@@ -1,19 +1,15 @@
 import gensim
 import json
-import nltk
-import stanza
 
 import torch
 from torch.nn.functional import cosine_similarity
 
 def main():
-    with open('data/SU.lemmatized.json', 'r') as f:
+    with open('data/SU.lemmatized.filtered.json', 'r') as f:
         corpus = json.load(f)
 
     all_texts = []
     for course in corpus['Course-list']:
-        # course['CourseContent'] = tokenize(course['CourseContent'])
-        # course['ILO-list-sv'] = [tokenize(outcome) for outcome in course['ILO-list-sv']]
         all_texts.append(course['CourseContent'])
         all_texts.extend(course['ILO-list-sv'])
     

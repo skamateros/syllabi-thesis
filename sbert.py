@@ -8,15 +8,14 @@ from sentence_transformers import SentenceTransformer
 
 def main():
 
-    use_chunking = False
+    use_chunking = True
 
     device = torch.device('mps' if torch.mps.is_available() else 'cpu')
     print(f'Using device: {device}')
 
-    with open('data/SU.heuristics.json', 'r') as f:
-    # with open('data/SU.subset.json', 'r') as f:
+    with open('data/SU.filtered.json', 'r') as f:
         corpus = json.load(f)
-    
+          
     model = SentenceTransformer('KBLab/sentence-bert-swedish-cased', device=device)
 
     output = {}
@@ -39,7 +38,7 @@ def main():
                 return obj.tolist()
             return super().default(obj)
 
-    with open('data/SU.sbert.similarities.json', 'w') as f:
+    with open('data/SU.chunked.similarities.json', 'w') as f:
         json.dump(output, f, indent=2, cls=TensorEncoder)
 
 if __name__ == '__main__':

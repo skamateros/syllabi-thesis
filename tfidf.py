@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def main():
 
-    with open('data/SU.lemmatized.json', 'r') as f:
+    with open('data/SU.lemmatized.filtered.json', 'r') as f:
         corpus = json.load(f)
 
     all_texts = []
