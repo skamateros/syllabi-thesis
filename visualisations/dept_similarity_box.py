@@ -15,6 +15,8 @@ for course in corpus['Course-list']:
 
 dept_sbert = {dep: [] for dep in departments.keys()}
 for course_code in sbert:
+    if course_code not in course_deps:
+        continue
     dept = course_deps[course_code]
     if dept not in dept_sbert:
         continue
@@ -39,7 +41,7 @@ errors = [np.std(scores) for scores in dept_scores.values()]
 
 # Sort departments by median score
 sorted_items = sorted(dept_scores.items(), key=lambda x: np.median(x[1]))
-sorted_labels = [departments.get(d, d) for d, _ in sorted_items]
+sorted_labels = [f"{departments.get(d, d)} (n={len(data)})" for d, data in sorted_items]
 sorted_data   = [scores for _, scores in sorted_items]
 
 # Plot
@@ -61,6 +63,8 @@ ax.axvline(grand_median, color='tomato', linestyle='--', linewidth=1.2,
 
 ax.set_xlabel('SBERT Similarity')
 ax.set_title('Per-Department SBERT Similarity Distributions')
+plt.figtext(0.99, 0.003, 'Value in parentheses indicates total number of ILOs in department',
+            horizontalalignment='right', fontsize=8, color='gray')
 ax.legend()
 plt.tight_layout()
 plt.savefig('dept_similarity_box.png', dpi=150)

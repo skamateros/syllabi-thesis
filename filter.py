@@ -1,9 +1,10 @@
 def filter_corpus(corpus):
-    red_flags = ['praktik','projekt','project', 'thesis', 'uppsats', 'examensarbete', 'självständigt arbete']
+    red_flags = ['praktik', 'projekt', 'project', 'thesis', 'uppsats', 'examensarbete', 'självständigt arbete']
     corpus['Course-list'] = [
         course for course in corpus['Course-list']
         if not any(word in course['CourseTitle'].lower() for word in red_flags)
         and len(course['ILO-list-sv']) <= 10
+        and len(course['ILO-list-sv']) > 0
     ]
     return corpus
 
