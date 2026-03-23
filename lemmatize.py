@@ -11,7 +11,7 @@ def main():
     nltk.download('stopwords')
     stop_words = set(nltk.corpus.stopwords.words('swedish'))
 
-    with open('data/SU.heuristics.json', 'r') as f:
+    with open('data/SU.filtered.json', 'r') as f:
         corpus = json.load(f)
 
     all_texts = []

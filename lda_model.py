@@ -21,7 +21,7 @@ def main():
     print('Training LDA model...')
     lda_model = gensim.models.ldamodel.LdaModel(corpus=model_corpus,
                                             id2word=id2word,
-                                            num_topics=20, 
+                                            num_topics=30, 
                                             random_state=19,
                                             update_every=1,
                                             chunksize=100,
