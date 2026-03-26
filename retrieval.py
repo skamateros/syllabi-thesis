@@ -10,9 +10,6 @@ from sentence_transformers import SentenceTransformer
 def main():
         
     def sbert():
-        # device = 'cpu'
-        device = torch.device('mps' if torch.mps.is_available() else 'cpu')
-        print(f'Using device: {device}')
 
         with open('data/SU.filtered.json', 'r') as f:
             corpus = json.load(f)
@@ -66,7 +63,67 @@ def main():
         
         return course_info, content_embeddings, outcome_embeddings
 
-    method = 'sbert'  # 'sbert', 'tfidf', or 'hybrid'
+    def get_topk(similarity_matrix, k, course_info):
+
+        topk = torch.topk(similarity_matrix, k=k, dim=1)
+
+        results = {}
+
+        for i, info in enumerate(course_info):
+            course_code = info['CourseCode']
+            results[course_code] = []
+
+            for k in range(topk.indices.shape[1]):
+                idx = topk.indices[i][k].item()
+                score = topk.values[i][k].item()
+
+                results[course_code].append({
+                    "rank": k + 1,
+                    "course_code": course_info[idx]['CourseCode'],
+                    "dep": course_info[idx]['Department'],
+                    "score": score
+                })
+        return topk, results
+    
+    def print_metrics(topk, course_info):
+        top1_correct = 0
+        top5_correct = 0
+        mrr = 0
+
+        for i, info in enumerate(course_info):
+            course_code = info['CourseCode']
+            indices = topk.indices[i]
+
+            # Top-1
+            if course_info[indices[0]]['CourseCode'] == course_code:
+                top1_correct += 1
+
+            # Top-5
+            if course_code in [course_info[idx]['CourseCode'] for idx in indices]:
+                top5_correct += 1
+
+            rank = None
+            for r, idx in enumerate(indices):
+                if course_info[idx]['CourseCode'] == course_code:
+                    rank = r + 1
+                    break
+
+            if rank is not None:
+                mrr += 1 / rank
+
+        top1_acc = top1_correct / len(course_info)
+        top5_acc = top5_correct / len(course_info)
+        mrr = mrr / len(course_info)
+
+        print(f"Top-1 Accuracy: {top1_acc:.4f}")
+        print(f"Top-5 Accuracy: {top5_acc:.4f}")
+        print(f"MRR: {mrr:.4f}")
+
+    # device = 'cpu'
+    device = torch.device('mps' if torch.mps.is_available() else 'cpu')
+    print(f'Using device: {device}')
+
+    method = 'tfidf'  # 'sbert', 'tfidf', or 'hybrid'
 
     if method in ['sbert', 'tfidf']:
         if method == 'sbert':
@@ -74,8 +131,8 @@ def main():
         if method == 'tfidf':
             course_info, content_embeddings, outcome_embeddings = tfidf()
     
-        content_embeddings = torch.stack(content_embeddings)
-        outcome_embeddings = torch.stack(outcome_embeddings)
+        content_embeddings = torch.stack(content_embeddings).to(device)
+        outcome_embeddings = torch.stack(outcome_embeddings).to(device)
 
         # Normalize embeddings
         content_embeddings = F.normalize(content_embeddings, p=2, dim=1)
@@ -84,80 +141,40 @@ def main():
         # Compute similarity matrix via matrix multiplication
         similarity_matrix = torch.matmul(outcome_embeddings, content_embeddings.T)
 
-    elif method == 'hybrid':
-        course_info, content_embeddings_sbert, outcome_embeddings_sbert = sbert()
-        course_info, content_embeddings_tfidf, outcome_embeddings_tfidf = tfidf()
+        topk, results = get_topk(similarity_matrix, k=5, course_info = course_info)
+        print_metrics(topk, course_info)
 
-        content_embeddings_sbert = F.normalize(torch.stack(content_embeddings_sbert), p=2, dim=1)
-        outcome_embeddings_sbert = F.normalize(torch.stack(outcome_embeddings_sbert), p=2, dim=1)
-        content_embeddings_tfidf = F.normalize(torch.stack(content_embeddings_tfidf), p=2, dim=1)
-        outcome_embeddings_tfidf = F.normalize(torch.stack(outcome_embeddings_tfidf), p=2, dim=1)
+    elif method == 'hybrid':
+        course_info_sbert, content_embeddings_sbert, outcome_embeddings_sbert = sbert()
+        course_info_tfidf, content_embeddings_tfidf, outcome_embeddings_tfidf = tfidf()
+
+        assert course_info_sbert == course_info_tfidf
+
+        course_info = course_info_sbert
+
+        content_embeddings_sbert = F.normalize(torch.stack(content_embeddings_sbert), p=2, dim=1).to(device)
+        outcome_embeddings_sbert = F.normalize(torch.stack(outcome_embeddings_sbert), p=2, dim=1).to(device)
+        content_embeddings_tfidf = F.normalize(torch.stack(content_embeddings_tfidf), p=2, dim=1).to(device)
+        outcome_embeddings_tfidf = F.normalize(torch.stack(outcome_embeddings_tfidf), p=2, dim=1).to(device)
 
         sim_matrix_tfidf = torch.matmul(outcome_embeddings_tfidf, content_embeddings_tfidf.T)
         sim_matrix_sbert = torch.matmul(outcome_embeddings_sbert, content_embeddings_sbert.T)
 
-        alpha = 0.5  # 50/50 weighting
-        similarity_matrix = alpha * sim_matrix_sbert + (1 - alpha) * sim_matrix_tfidf
+        sim_matrix_sbert = F.normalize(sim_matrix_sbert, p=2, dim=1)
+        sim_matrix_tfidf = F.normalize(sim_matrix_tfidf, p=2, dim=1)
+
+        for alpha in [0, 0.25, 0.5, 0.75, 1.0]:
+            print(f"Hybridizing with alpha = {alpha}")
+            print(f"Formula: sim = {alpha} * sbert + (1 - {alpha}) * tfidf")
+            similarity_matrix = alpha * sim_matrix_sbert + (1 - alpha) * sim_matrix_tfidf
+            topk, results = get_topk(similarity_matrix, k=5, course_info = course_info)
+            print_metrics(topk, course_info)
 
     else:
         raise ValueError("Invalid method. Choose 'sbert', 'tfidf', or 'hybrid'.")
 
-
-    topk = torch.topk(similarity_matrix, k=5, dim=1)
-
-    results = {}
-
-    for i, info in enumerate(course_info):
-        course_code = info['CourseCode']
-        results[course_code] = []
-
-        for k in range(topk.indices.shape[1]):
-            idx = topk.indices[i][k].item()
-            score = topk.values[i][k].item()
-
-            results[course_code].append({
-                "rank": k + 1,
-                "course_code": course_info[idx]['CourseCode'],
-                "dep": course_info[idx]['Department'],
-                "score": score
-            })
-
-    with open(f'data/SU.{method}_retrieval.similarities.json', 'w') as f:
-        json.dump(results, f, indent=2)
-
-    # Calculate Top-1 and Top-5 accuracy
-    top1_correct = 0
-    top5_correct = 0
-    mrr = 0
-
-    for i, info in enumerate(course_info):
-        course_code = info['CourseCode']
-        indices = topk.indices[i]
-
-        # Top-1
-        if course_info[indices[0]]['CourseCode'] == course_code:
-            top1_correct += 1
-
-        # Top-5
-        if course_code in [course_info[idx]['CourseCode'] for idx in indices]:
-            top5_correct += 1
-
-        rank = None
-        for r, idx in enumerate(indices):
-            if course_info[idx]['CourseCode'] == course_code:
-                rank = r + 1
-                break
-
-        if rank is not None:
-            mrr += 1 / rank
-
-    top1_acc = top1_correct / len(course_info)
-    top5_acc = top5_correct / len(course_info)
-    mrr /= len(course_info)
-
-    print(f"Top-1 Accuracy: {top1_acc:.4f}")
-    print(f"Top-5 Accuracy: {top5_acc:.4f}")
-    print(f"MRR: {mrr:.4f}")
+    # with open(f'data/SU.{method}_retrieval.similarities.json', 'w') as f:
+    #     json.dump(results, f, indent=2)
 
         
 if __name__ == "__main__":
