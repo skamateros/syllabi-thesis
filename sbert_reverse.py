@@ -16,8 +16,22 @@ def sliding_window(sentences, window_size=2, stride=1):
     return chunks
 
 def get_sentences(text):
-    sentences = re.split(r'(?<=[.!?])\s+', text)
-    return [sentence.strip() for sentence in sentences if sentence.strip()]
+    abbreviations = ['t.ex.', 'd.v.s.', 'm.m.', 'bl.a.', 'etc.']
+    placeholder_map = {}
+    for i, abbr in enumerate(abbreviations):
+        placeholder = f"__ABBR_{i}__"
+        placeholder_map[placeholder] = abbr
+        text = text.replace(abbr, placeholder)
+
+    sentences = re.split(r'(?<!\b[a-zA-Z]\.)(?<!\b\d\.)(?<=[.!?])\s+', text)
+
+    restored = []
+    for sentence in sentences:
+        for placeholder, abbr in placeholder_map.items():
+            sentence = sentence.replace(placeholder, abbr)
+        restored.append(sentence.strip())
+
+    return [s for s in restored if s]
 
 # Custom JSON Encoder to handle pytorch tensors
 class TensorEncoder(json.JSONEncoder):
@@ -41,23 +55,27 @@ def main():
     for course in corpus['Course-list']:
         sentences = get_sentences(course['CourseContent'])
         chunks = sentences
-        # chunks = sliding_window(sentences, window_size=2, stride=1)
+
         chunk_embeds = model.encode(chunks, convert_to_tensor=True)
         outcome_embeds = model.encode(course['ILO-list-sv'], convert_to_tensor=True)
-        # outcome_embeds = [model.encode(outcome, convert_to_tensor=True) for outcome in course['ILO-list-sv']]
 
         output[course['CourseCode']] = []
-
+        output[course['CourseCode']] = {
+                'outcomes': course['ILO-list-sv'],
+                'chunks': []
+}
         for chunk_embed, chunk in zip(chunk_embeds, chunks):
             sim_list = [cosine_similarity(chunk_embed, outcome_embed, dim = 0).item() for outcome_embed in outcome_embeds]
 
-            output[course['CourseCode']].append({ 'chunk': chunk,
-                                            'max_similarity': max(sim_list),
-                                            'outcome_index': sim_list.index(max(sim_list)),
-                                            'outcomes': course['ILO-list-sv']})
-        
-        # output[course['CourseCode']] = [[cosine_similarity(chunk_embed, outcome_embed, dim = 0).item() for chunk_embed in chunk_embeds] for outcome_embed in outcome_embeds]
-        # output[course['CourseCode']] = [[sim] for sim in max_similarities]
+            best_idx = sim_list.index(max(sim_list))
+            best_sim = sim_list[best_idx]
+
+            output[course['CourseCode']]['chunks'].append({
+                'chunk': chunk,
+                'max_similarity': best_sim,
+                'outcome_index': best_idx,
+                'matched_outcome': course['ILO-list-sv'][best_idx]
+            })
 
     with open('data/SU.reverse.sbert.similarities.json', 'w') as f:
         json.dump(output, f, indent=2, cls=TensorEncoder)

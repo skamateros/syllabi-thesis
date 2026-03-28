@@ -16,8 +16,22 @@ def sliding_window(sentences, window_size=2, stride=1):
     return chunks
 
 def get_sentences(text):
-    sentences = re.split(r'(?<=[.!?])\s+', text)
-    return [sentence.strip() for sentence in sentences if sentence.strip()]
+    abbreviations = ['t.ex.', 'd.v.s.', 'm.m.', 'bl.a.', 'etc.']
+    placeholder_map = {}
+    for i, abbr in enumerate(abbreviations):
+        placeholder = f"__ABBR_{i}__"
+        placeholder_map[placeholder] = abbr
+        text = text.replace(abbr, placeholder)
+
+    sentences = re.split(r'(?<!\b[a-zA-Z]\.)(?<!\b\d\.)(?<=[.!?])\s+', text)
+
+    restored = []
+    for sentence in sentences:
+        for placeholder, abbr in placeholder_map.items():
+            sentence = sentence.replace(placeholder, abbr)
+        restored.append(sentence.strip())
+
+    return [s for s in restored if s]
 
 # Custom JSON Encoder to handle pytorch tensors
 class TensorEncoder(json.JSONEncoder):
