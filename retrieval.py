@@ -26,9 +26,9 @@ def main():
             content_embeddings.append(
                 model.encode(course['CourseContent'], convert_to_tensor=True, device=device)
             )
-
-            outcome_emb = model.encode(course['ILO-list-sv'], convert_to_tensor=True, device=device)
-            outcome_embeddings.append(torch.mean(outcome_emb, dim=0))
+            outcomes = '. '.join(course['ILO-list-sv'])
+            outcome_embeddings.append(model.encode(outcomes, convert_to_tensor=True, device=device))
+            # outcome_embeddings.append(torch.mean(outcome_emb, dim=0))
         
         return course_info, content_embeddings, outcome_embeddings
         
@@ -54,12 +54,17 @@ def main():
             content_embeddings.append(
                 torch.tensor(vectorizer.transform([tokens2string(course['CourseContent'])]).toarray()[0], dtype=torch.float32)
             )
-            outcome_vecs = []
-            for outcome in course['ILO-list-sv']:
-                outcome_vecs.append(
-                    torch.tensor(vectorizer.transform([tokens2string(outcome)]).toarray()[0], dtype=torch.float32)
-                )
-            outcome_embeddings.append(torch.mean(torch.stack(outcome_vecs), dim=0))
+            outcomes = '. '.join([tokens2string(outcome) for outcome in course['ILO-list-sv']])
+            outcome_embeddings.append(
+                torch.tensor(vectorizer.transform([outcomes]).toarray()[0], dtype=torch.float32)
+            )
+
+            # outcome_vecs = []
+            # for outcome in course['ILO-list-sv']:
+            #     outcome_vecs.append(
+            #         torch.tensor(vectorizer.transform([tokens2string(outcome)]).toarray()[0], dtype=torch.float32)
+            #     )
+            # outcome_embeddings.append(torch.mean(torch.stack(outcome_vecs), dim=0))
         
         return course_info, content_embeddings, outcome_embeddings
 
@@ -73,12 +78,12 @@ def main():
             course_code = info['CourseCode']
             results[course_code] = []
 
-            for k in range(topk.indices.shape[1]):
-                idx = topk.indices[i][k].item()
-                score = topk.values[i][k].item()
+            for rank_idx in range(topk.indices.shape[1]):
+                idx = topk.indices[i][rank_idx].item()
+                score = topk.values[i][rank_idx].item()
 
                 results[course_code].append({
-                    "rank": k + 1,
+                    "rank": rank_idx + 1,
                     "course_code": course_info[idx]['CourseCode'],
                     "dep": course_info[idx]['Department'],
                     "score": score
@@ -123,7 +128,13 @@ def main():
     device = torch.device('mps' if torch.mps.is_available() else 'cpu')
     print(f'Using device: {device}')
 
-    method = 'tfidf'  # 'sbert', 'tfidf', or 'hybrid'
+    method = 'hybrid'  # 'sbert', 'tfidf', or 'hybrid'
+    reverse = True # If True, retrieves outcomes given content. If False, retrieves content given outcomes.
+
+    if reverse:
+        print("Retrieving outcomes given content...")
+    else:
+        print("Retrieving content given outcomes...")
 
     if method in ['sbert', 'tfidf']:
         if method == 'sbert':
@@ -139,7 +150,10 @@ def main():
         outcome_embeddings = F.normalize(outcome_embeddings, p=2, dim=1)
 
         # Compute similarity matrix via matrix multiplication
-        similarity_matrix = torch.matmul(outcome_embeddings, content_embeddings.T)
+        if reverse:
+            similarity_matrix = torch.matmul(content_embeddings, outcome_embeddings.T)
+        else:
+            similarity_matrix = torch.matmul(outcome_embeddings, content_embeddings.T)
 
         topk, results = get_topk(similarity_matrix, k=5, course_info = course_info)
         print_metrics(topk, course_info)
@@ -157,8 +171,12 @@ def main():
         content_embeddings_tfidf = F.normalize(torch.stack(content_embeddings_tfidf), p=2, dim=1).to(device)
         outcome_embeddings_tfidf = F.normalize(torch.stack(outcome_embeddings_tfidf), p=2, dim=1).to(device)
 
-        sim_matrix_tfidf = torch.matmul(outcome_embeddings_tfidf, content_embeddings_tfidf.T)
-        sim_matrix_sbert = torch.matmul(outcome_embeddings_sbert, content_embeddings_sbert.T)
+        if reverse:
+            sim_matrix_tfidf = torch.matmul(content_embeddings_tfidf, outcome_embeddings_tfidf.T)
+            sim_matrix_sbert = torch.matmul(content_embeddings_sbert, outcome_embeddings_sbert.T)
+        else:
+            sim_matrix_tfidf = torch.matmul(outcome_embeddings_tfidf, content_embeddings_tfidf.T)
+            sim_matrix_sbert = torch.matmul(outcome_embeddings_sbert, content_embeddings_sbert.T)
 
         sim_matrix_sbert = F.normalize(sim_matrix_sbert, p=2, dim=1)
         sim_matrix_tfidf = F.normalize(sim_matrix_tfidf, p=2, dim=1)
@@ -173,8 +191,10 @@ def main():
     else:
         raise ValueError("Invalid method. Choose 'sbert', 'tfidf', or 'hybrid'.")
 
-    # with open(f'data/SU.{method}_retrieval.similarities.json', 'w') as f:
-    #     json.dump(results, f, indent=2)
+    if reverse:
+        method = 'reverse.' + method
+    with open(f'data/SU.{method}_retrieval.similarities.json', 'w') as f:
+        json.dump(results, f, indent=2)
 
         
 if __name__ == "__main__":
