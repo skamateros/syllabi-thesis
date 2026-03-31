@@ -6,6 +6,9 @@ sv_suc_lemmatizer.pt
 plot.py
 test.py
 
+#Trash folder
+unused
+
 # Should remove before publishing
 requirements.txt
 
