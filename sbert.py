@@ -42,8 +42,6 @@ class TensorEncoder(json.JSONEncoder):
         
 def main():
 
-    use_chunking = True
-
     device = torch.device('mps' if torch.mps.is_available() else 'cpu')
     print(f'Using device: {device}')
 
@@ -54,24 +52,53 @@ def main():
 
     output = {}
 
+    match_per = 'content' # content or outcome
+
     for course in corpus['Course-list']:
-        if use_chunking:
-            sentences = get_sentences(course['CourseContent'])
-            chunks = sliding_window(sentences, window_size=2, stride=1)
-        else:
-            chunks = [course['CourseContent']]
+        content_chunks = get_sentences(course['CourseContent'])
+        content_chunk_embeds = model.encode(content_chunks, convert_to_tensor=True)
 
-        chunk_embeds = model.encode(chunks, convert_to_tensor=True)
-        outcome_embeds = model.encode(course['ILO-list-sv'], convert_to_tensor=True)
-        # outcome_embeds = [model.encode(outcome, convert_to_tensor=True) for outcome in course['ILO-list-sv']]
+        course_outcomes = course['ILO-list-sv']
+        outcome_embeds = model.encode(course_outcomes, convert_to_tensor=True)
 
-        max_similarities = [torch.max(cosine_similarity(chunk_embeds, outcome_embed.unsqueeze(0), dim=1)).item()
-                    for outcome_embed in outcome_embeds]
-        
-        # output[course['CourseCode']] = [[cosine_similarity(chunk_embed, outcome_embed, dim = 0).item() for chunk_embed in chunk_embeds] for outcome_embed in outcome_embeds]
-        output[course['CourseCode']] = [[sim] for sim in max_similarities]
+        if match_per == 'content':
+            output[course['CourseCode']] = {
+                    'outcomes' : course_outcomes,
+                    'chunks': []
+    }
+            for chunk_embed, chunk in zip(content_chunk_embeds, content_chunks):
+                sim_list = [cosine_similarity(chunk_embed, outcome_embed, dim = 0).item() for outcome_embed in outcome_embeds]
 
-    with open('data/SU.chunked.similarities.json', 'w') as f:
+                best_idx = sim_list.index(max(sim_list))
+                best_sim = sim_list[best_idx]
+
+                output[course['CourseCode']]['chunks'].append({
+                    'chunk': chunk,
+                    'max_similarity': best_sim,
+                    'outcome_index': best_idx,
+                    'matched_outcome': course_outcomes[best_idx]
+                })
+        elif match_per == 'outcome':
+            output[course['CourseCode']] = {
+                    'content_chunks' : content_chunks,
+                    'outcomes': []
+    }
+            for outcome_embed, outcome in zip(outcome_embeds, course_outcomes):
+                sim_list = [cosine_similarity(outcome_embed, chunk_embed, dim = 0).item() for chunk_embed in content_chunk_embeds]
+
+                best_idx = sim_list.index(max(sim_list))
+                best_sim = sim_list[best_idx]
+
+                output[course['CourseCode']]['outcomes'].append({
+                    'outcome': outcome,
+                    'max_similarity': best_sim,
+                    'chunk_index': best_idx,
+                    'matched_chunk': content_chunks[best_idx]
+                })
+        else: 
+            raise ValueError("Invalid match_per value. Use 'content' or 'outcome'.")
+
+    with open(f'data/SU.{match_per}.sbert.similarities.json', 'w') as f:
         json.dump(output, f, indent=2, cls=TensorEncoder)
 
 if __name__ == '__main__':
