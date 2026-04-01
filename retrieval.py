@@ -193,7 +193,7 @@ def main():
 
     if reverse:
         method = 'reverse.' + method
-    with open(f'data/SU.{method}_retrieval.similarities.json', 'w') as f:
+    with open(f'data/{method}_retrieval.similarities.json', 'w') as f:
         json.dump(results, f, indent=2)
 
         

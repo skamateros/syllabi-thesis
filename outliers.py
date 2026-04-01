@@ -2,7 +2,7 @@ import json
 
 for i in ['outcome', 'content']:
 
-    with open(f'data/SU.{i}.sbert.similarities.json', 'r') as f:
+    with open(f'data/{i}.sbert.similarities.json', 'r') as f:
         sbert_sims = json.load(f)
 
     output = []

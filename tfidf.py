@@ -35,7 +35,7 @@ def main():
         output[course['CourseCode']] = similarities
 
     print('Saving similarities to JSON file...')
-    with open('data/SU.tfidf.similarities.json', 'w') as f:
+    with open('data/tfidf.similarities.json', 'w') as f:
         json.dump(output, f, indent=2)
 
 if __name__ == '__main__':

@@ -98,7 +98,7 @@ def main():
         else: 
             raise ValueError("Invalid match_per value. Use 'content' or 'outcome'.")
 
-    with open(f'data/SU.{match_per}.sbert.similarities.json', 'w') as f:
+    with open(f'data/{match_per}.sbert.similarities.json', 'w') as f:
         json.dump(output, f, indent=2, cls=TensorEncoder)
 
 if __name__ == '__main__':
