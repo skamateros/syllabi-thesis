@@ -14,15 +14,21 @@ def correlation(f_similarities, f_corpus, method = spearmanr):
 
     if isinstance(f_similarities, str):
         with open(f_similarities, 'r') as f1:
-            similarities = json.load(f1)
+            sims = json.load(f1)
     elif isinstance(f_similarities, dict):
-        similarities = f_similarities
+        sims = f_similarities
     if isinstance(f_corpus, str):
         with open(f_corpus, 'r') as f2:
             corpus = json.load(f2)
     elif isinstance(f_corpus, dict):
         corpus = f_corpus
-        
+    
+    similarities = {}
+
+    for code, course in sims.items():
+        if code not in similarities:
+            similarities[code] = [[outcome['max_similarity']] for outcome in course['outcomes']]
+
     for course in corpus['Course-list']:
         course_code = course['CourseCode']
         if course_code in similarities:
