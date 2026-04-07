@@ -6,6 +6,7 @@ sv_suc_lemmatizer.pt
 plot.py
 test.py
 visualisations
+tfidf2.py
 
 #Trash folder
 unused
