@@ -338,20 +338,20 @@
   {
     "course_code": "BL0002",
     "outcome": "Du ska kunna planera, genomf\u00f6ra, tolka och redovisa f\u00e4ltarbeten, experiment och observationer samt visa f\u00f6rm\u00e5ga att hantera material och utrustning .",
-    "similarity": 0.3883778750896454,
-    "matched_chunk": "Inneh\u00e5llet t\u00e4cker motsvarande gymnasieskolans kurs Biologi 1.  b. Kursen best\u00e5r av f\u00f6ljande delar: Biologi 1, teori (Biology 1, theory) 6 hp och F\u00e4ltarbete 1 (Field work 1) 2 hp."
+    "similarity": 0.35656026005744934,
+    "matched_chunk": "a. Kursen behandlar \u00e4mnesomr\u00e5det biologi med ett inneh\u00e5ll svarande mot de kunskaper p\u00e5 gymnasieniv\u00e5 som kr\u00e4vs f\u00f6r tilltr\u00e4de till utbildningar p\u00e5 kandidatniv\u00e5 inom Naturvetenskapliga fakulteten vid Stockholms universitet."
   },
   {
     "course_code": "BL0002",
     "outcome": "Du ska kunna bearbeta och utv\u00e4rdera data och resultat med hj\u00e4lp av analys av grafer, enhetsanalys och storleksuppskattningar .",
-    "similarity": 0.3878961205482483,
-    "matched_chunk": "Inneh\u00e5llet t\u00e4cker motsvarande gymnasieskolans kurs Biologi 1.  b. Kursen best\u00e5r av f\u00f6ljande delar: Biologi 1, teori (Biology 1, theory) 6 hp och F\u00e4ltarbete 1 (Field work 1) 2 hp."
+    "similarity": 0.36651596426963806,
+    "matched_chunk": "a. Kursen behandlar \u00e4mnesomr\u00e5det biologi med ett inneh\u00e5ll svarande mot de kunskaper p\u00e5 gymnasieniv\u00e5 som kr\u00e4vs f\u00f6r tilltr\u00e4de till utbildningar p\u00e5 kandidatniv\u00e5 inom Naturvetenskapliga fakulteten vid Stockholms universitet."
   },
   {
     "course_code": "BL0002",
     "outcome": "Du ska kunna utv\u00e4rdera resultat och slutsatser genom analys av metodval, arbetsprocess och felk\u00e4llor .",
-    "similarity": 0.36221012473106384,
-    "matched_chunk": "Delarna behandlar: \u2022 principer f\u00f6r klassificering av levande organismer och \u00f6versikt \u00f6ver v\u00e4xt- och djurrikets huvudgrupper och evolution\u00e4ra historia \u2022 ekosystems uppbyggnad, funktion och till\u00e4mpningar: energifl\u00f6den, n\u00e4ringskedjor, kretslopp, populationsdynamik, biologisk m\u00e5ngfald \u2022 m\u00e4nniskan som ekologisk faktor: ekosystemtj\u00e4nster, h\u00e5llbar utveckling, st\u00f6rningar i ekosystem \u2022 cellers egenskaper och funktion \u2022 arvsmassans uppbyggnad samt \u00e4rftlighetens lagar och mekanismer \u2022 genernas uttryck, arv och milj\u00f6 samt genetikens anv\u00e4ndningsomr\u00e5den, m\u00f6jligheter, risker och etiska fr\u00e5gor \u2022 naturvetenskapliga teorier om livets uppkomst och utveckling \u2022 evolutionens mekanismer som naturligt urval och sexuell selektion samt deras betydelse f\u00f6r artbildning \u2022 naturvetenskapliga fr\u00e5gest\u00e4llningar, modeller och teorier som f\u00f6renklingar av verkligheten; det experimentella arbetets betydelse f\u00f6r att testa, omv\u00e4rdera och revidera hypoteser, teorier och modeller \u2022 planering och genomf\u00f6rande av f\u00e4ltstudier, experiment och observationer och pr\u00f6vning av hypoteser samt utv\u00e4rdering av resultat och slutsatser."
+    "similarity": 0.3393089175224304,
+    "matched_chunk": "Inneh\u00e5llet t\u00e4cker motsvarande gymnasieskolans kurs Biologi 1.  b. Kursen best\u00e5r av f\u00f6ljande delar: Biologi 1, teori (Biology 1, theory) 6 hp och F\u00e4ltarbete 1 (Field work 1) 2 hp.  Delarna behandlar: \u2022 principer f\u00f6r klassificering av levande organismer och \u00f6versikt \u00f6ver v\u00e4xt- och djurrikets huvudgrupper och evolution\u00e4ra historia \u2022 ekosystems uppbyggnad, funktion och till\u00e4mpningar: energifl\u00f6den, n\u00e4ringskedjor, kretslopp, populationsdynamik, biologisk m\u00e5ngfald \u2022 m\u00e4nniskan som ekologisk faktor: ekosystemtj\u00e4nster, h\u00e5llbar utveckling, st\u00f6rningar i ekosystem \u2022 cellers egenskaper och funktion \u2022 arvsmassans uppbyggnad samt \u00e4rftlighetens lagar och mekanismer \u2022 genernas uttryck, arv och milj\u00f6 samt genetikens anv\u00e4ndningsomr\u00e5den, m\u00f6jligheter, risker och etiska fr\u00e5gor \u2022 naturvetenskapliga teorier om livets uppkomst och utveckling \u2022 evolutionens mekanismer som naturligt urval och sexuell selektion samt deras betydelse f\u00f6r artbildning \u2022 naturvetenskapliga fr\u00e5gest\u00e4llningar, modeller och teorier som f\u00f6renklingar av verkligheten; det experimentella arbetets betydelse f\u00f6r att testa, omv\u00e4rdera och revidera hypoteser, teorier och modeller \u2022 planering och genomf\u00f6rande av f\u00e4ltstudier, experiment och observationer och pr\u00f6vning av hypoteser samt utv\u00e4rdering av resultat och slutsatser."
   },
   {
     "course_code": "KZ0002",
@@ -362,14 +362,14 @@
   {
     "course_code": "KZ0002",
     "outcome": "Du ska kunna bearbeta och utv\u00e4rdera data och resultat med hj\u00e4lp av analys av grafer, enhetsanalys och storleksuppskattningar .",
-    "similarity": 0.37935617566108704,
-    "matched_chunk": "Delarna behandlar: \u2022 kemiska reaktionshastigheter, j\u00e4mviktskonstanter och syra-baskonstanter samt ber\u00e4kning av j\u00e4mvikt och faktorer som p\u00e5verkar j\u00e4mvikt \u2022 struktur och reaktivitet f\u00f6r olika organiska \u00e4mnesklasser \u2022 kromatografiska och spektrofotometriska metoder f\u00f6r kvalitativ och kvantitativ analys \u2022 biomolekylers sammans\u00e4ttning, struktur och egenskaper \u2022 kemin f\u00f6r det genetiska informationsfl\u00f6det, huvuddragen f\u00f6r energiomvandling i levande organismer \u2022 det experimentella arbetets betydelse f\u00f6r att testa, pr\u00f6va, omv\u00e4rdera, bekr\u00e4fta eller revidera teorier, modeller och hypoteser."
+    "similarity": 0.350140780210495,
+    "matched_chunk": "a. Kursen behandlar \u00e4mnesomr\u00e5det kemi med ett inneh\u00e5ll svarande mot de kunskaper p\u00e5 gymnasieniv\u00e5 som kr\u00e4vs f\u00f6r tilltr\u00e4de till utbildningar p\u00e5 kandidatniv\u00e5 inom Naturvetenskapliga fakulteten vid Stockholms universitet."
   },
   {
     "course_code": "KZ0002",
     "outcome": "Du ska kunna utv\u00e4rdera resultat och slutsatser genom analys av metodval, arbetsprocess och felk\u00e4llor .",
-    "similarity": 0.3616971969604492,
-    "matched_chunk": "Delarna behandlar: \u2022 kemiska reaktionshastigheter, j\u00e4mviktskonstanter och syra-baskonstanter samt ber\u00e4kning av j\u00e4mvikt och faktorer som p\u00e5verkar j\u00e4mvikt \u2022 struktur och reaktivitet f\u00f6r olika organiska \u00e4mnesklasser \u2022 kromatografiska och spektrofotometriska metoder f\u00f6r kvalitativ och kvantitativ analys \u2022 biomolekylers sammans\u00e4ttning, struktur och egenskaper \u2022 kemin f\u00f6r det genetiska informationsfl\u00f6det, huvuddragen f\u00f6r energiomvandling i levande organismer \u2022 det experimentella arbetets betydelse f\u00f6r att testa, pr\u00f6va, omv\u00e4rdera, bekr\u00e4fta eller revidera teorier, modeller och hypoteser."
+    "similarity": 0.3180849850177765,
+    "matched_chunk": "Inneh\u00e5llet t\u00e4cker motsvarande gymnasieskolans kurs Kemi 2.  b. Kursen best\u00e5r av f\u00f6ljande delar: Kemi 2, teori (Chemistry 2, theory) 6 hp och Kemilaborationer 2 (Chemistry experiments 2) 2 hp. Delarna behandlar: \u2022 kemiska reaktionshastigheter, j\u00e4mviktskonstanter och syra-baskonstanter samt ber\u00e4kning av j\u00e4mvikt och faktorer som p\u00e5verkar j\u00e4mvikt \u2022 struktur och reaktivitet f\u00f6r olika organiska \u00e4mnesklasser \u2022 kromatografiska och spektrofotometriska metoder f\u00f6r kvalitativ och kvantitativ analys \u2022 biomolekylers sammans\u00e4ttning, struktur och egenskaper \u2022 kemin f\u00f6r det genetiska informationsfl\u00f6det, huvuddragen f\u00f6r energiomvandling i levande organismer \u2022 det experimentella arbetets betydelse f\u00f6r att testa, pr\u00f6va, omv\u00e4rdera, bekr\u00e4fta eller revidera teorier, modeller och hypoteser."
   },
   {
     "course_code": "GG1003",
@@ -1118,8 +1118,8 @@
   {
     "course_code": "TYA002",
     "outcome": "Du ska kunna st\u00e4lla och besvara fr\u00e5gor inom omr\u00e5den som g\u00e4ller vardagliga situationer eller bekanta \u00e4mnesomr\u00e5den .",
-    "similarity": 0.4565369188785553,
-    "matched_chunk": "I delkursen \u00f6vas f\u00f6rm\u00e5gan att f\u00f6rst\u00e5, k\u00e4nna igen och muntligt anv\u00e4nda vanliga ord och fraser i tyskan som g\u00e4ller personliga f\u00f6rh\u00e5llanden och den n\u00e4rmsta omgivningen."
+    "similarity": 0.4544297754764557,
+    "matched_chunk": "Kursen \u00e4r anv\u00e4ndbar f\u00f6r alla yrken och anst\u00e4llningar d\u00e4r element\u00e4ra kunskaper i tyska spr\u00e5ket kr\u00e4vs eller \u00e4r en konkurrensf\u00f6rdel."
   },
   {
     "course_code": "MT5006",
@@ -2600,8 +2600,8 @@
   {
     "course_code": "MT5011",
     "outcome": "Skriftligen och muntligen redog\u00f6ra f\u00f6r l\u00f6sningar till mer omfattande problemst\u00e4llningar .",
-    "similarity": 0.4136883020401001,
-    "matched_chunk": "Inom omr\u00e5det solvens, riskaggregering och riskreducerande tekniker: diversifiering, beroendemodellering, riskm\u00e5tt och Solvens II (inkl. marknadsrisk), \u00e5terf\u00f6rs\u00e4kring och andra riskreducerande tekniker inkl. marknadsrisk)."
+    "similarity": 0.44572722911834717,
+    "matched_chunk": "b. Kursen best\u00e5r av f\u00f6ljande delar: 1. Teori (Theory), 4 hp. 2. Fallstudier (Case studies), 3.5 hp."
   },
   {
     "course_code": "MM5025",
@@ -2920,6 +2920,12 @@
     "outcome": "Kunna j\u00e4mf\u00f6ra och kontrastera olika teorier r\u00f6rande dessa fenomen samt identifiera deras underliggande teoretiska premisser.",
     "similarity": 0.4277477264404297,
     "matched_chunk": "Kursen erbjuder deltagarna generellt sett goda m\u00f6jligheter att reflektera \u00f6ver sina egna antaganden kring dagens v\u00e4rldsordning och USA:s s\u00e4rst\u00e4llning inom densamma, utifr\u00e5n en upps\u00e4ttning relevanta analytiska och teoretiska begrepp."
+  },
+  {
+    "course_code": "MI7011",
+    "outcome": "Du ska kunna identifiera och analysera \u00e5terkopplingsmekanismer, f\u00f6rdr\u00f6jningar och icke .",
+    "similarity": 0.45487040281295776,
+    "matched_chunk": "a. Kursen behandlar probleml\u00f6sning med hj\u00e4lp av system- och milj\u00f6modellering, kvantitativa metoder samt livscykelanalys."
   },
   {
     "course_code": "ABMETH",
@@ -3528,6 +3534,12 @@
     "matched_chunk": "Flera aspekter av \u00e4mnet aktualiseras, s\u00e5som olika typer av l\u00e5n, strukturell och stilistisk p\u00e5verkan, kodv\u00e4xling och spr\u00e5kblandning."
   },
   {
+    "course_code": "MT7039",
+    "outcome": "Du ska kunna presentera analysresultat i en skriftlig rapport .",
+    "similarity": 0.41810184717178345,
+    "matched_chunk": "a. Kursen syftar till att introducera s\u00e5v\u00e4l grundl\u00e4ggande som moderna begrepp inom statistisk inl\u00e4rning utan tr\u00e4ningsdata (o\u00f6vervakad inl\u00e4rning) med till\u00e4mpningar inom statistisk dataanalys."
+  },
+  {
     "course_code": "MM7031",
     "outcome": "Du ska kunna formulera centrala definitioner och satser inom de delar som kursen behandlar .",
     "similarity": 0.3984640836715698,
@@ -3818,7 +3830,7 @@
   {
     "course_code": "MT3003",
     "outcome": "Du ska kunna redog\u00f6ra f\u00f6r betydelsen av \u00f6ppenhet och reproducerbarhet i vetenskapligt arbete (del 1 till3)",
-    "similarity": 0.3662319481372833,
+    "similarity": 0.3662319779396057,
     "matched_chunk": "Vidare ges en introduktion till verktyg f\u00f6r versionshantering och relationsdatabaser."
   },
   {
@@ -4249,27 +4261,21 @@
   },
   {
     "course_code": "KZ7020",
-    "outcome": "V\u00e4lja en kombination av metoder f\u00f6r att l\u00f6sa ett givet materialrelaterat problem och motivera valet .",
-    "similarity": 0.45723167061805725,
-    "matched_chunk": "Studenterna kommer att f\u00e5 grundl\u00e4ggande teoretiska kunskaper om metoderna och f\u00e5 praktiska \u00f6vningar p\u00e5 n\u00e5gra av metoderna."
-  },
-  {
-    "course_code": "KZ7020",
     "outcome": "Korrelera de experimentella resultaten som erh\u00e5llits med olika metoder .",
     "similarity": 0.4211181402206421,
     "matched_chunk": "Studenterna kommer att f\u00e5 grundl\u00e4ggande teoretiska kunskaper om metoderna och f\u00e5 praktiska \u00f6vningar p\u00e5 n\u00e5gra av metoderna."
-  },
-  {
-    "course_code": "KZ7102",
-    "outcome": "Till\u00e4mpa statistiska tester f\u00f6r hypotespr\u00f6vning .",
-    "similarity": 0.4573795795440674,
-    "matched_chunk": "Kursen behandlar visualisering och karakterisering av data insamlad med kromatografi, UV-Vis, Fluorescens, IR etc. Dessutom kommer grundl\u00e4ggande statistik f\u00f6r hypotespr\u00f6vning, olika kvantifieringsmetoder samt metodvalidering, ackreditering och kvalitetskontroll inom analytisk kemi att g\u00e5s igenom."
   },
   {
     "course_code": "FE4228",
     "outcome": "Visa f\u00f6rm\u00e5ga att till\u00e4mpa relevanta begrepp och teorier vid analys av empiriska fenomen .",
     "similarity": 0.4257371723651886,
     "matched_chunk": "Kursens \u00f6vergripande syfte \u00e4r att ge insikter i nya trender och ansatser inom de akademiska omr\u00e5dena interkulturellt management och ledarskap."
+  },
+  {
+    "course_code": "MT7050",
+    "outcome": "Du ska kunna presentera analysresultat i en skriftlig rapport .",
+    "similarity": 0.41810184717178345,
+    "matched_chunk": "a. Kursen syftar till att introducera s\u00e5v\u00e4l grundl\u00e4ggande som moderna begrepp inom statistisk inl\u00e4rning utan tr\u00e4ningsdata (o\u00f6vervakad inl\u00e4rning) med till\u00e4mpningar inom statistisk dataanalys."
   },
   {
     "course_code": "FRAFR2",

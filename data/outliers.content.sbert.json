@@ -36,6 +36,12 @@
     "matched_outcome": "I. kritiskt granska statistiska unders\u00f6kningar utifr\u00e5n ett vetenskapligt perspektiv ."
   },
   {
+    "course_code": "ST111G",
+    "chunk": "Samplingf\u00f6rdelningar och centrala gr\u00e4nsv\u00e4rdesatsen.",
+    "similarity": 0.40761274099349976,
+    "matched_outcome": "I. kritiskt granska statistiska unders\u00f6kningar utifr\u00e5n ett vetenskapligt perspektiv ."
+  },
+  {
     "course_code": "ST131G",
     "chunk": "Kursen best\u00e5r av endast en del och examineras genom tv\u00e5 prov i enlighet med ovanst\u00e5ende provkoder, d\u00e4r Prov 1 har provkod 11ST och Prov 2 har provkod 12SI.",
     "similarity": 0.3233965039253235,
@@ -240,6 +246,12 @@
     "matched_outcome": "Du ska kunna l\u00f6sa och tolka problem inom sannolikhetsl\u00e4ra ."
   },
   {
+    "course_code": "EC7210",
+    "chunk": "I m\u00e5n av tid behandlas \u00e4ven v\u00e4xelkurser och internationella kapitalfl\u00f6den.",
+    "similarity": 0.40756872296333313,
+    "matched_outcome": "Du ska ha kunskap om och f\u00f6rst\u00e5else av centrala makroekonomiska modeller, koncept och analysredskap ."
+  },
+  {
     "course_code": "EC7112",
     "chunk": "Kursen best\u00e5r av tv\u00e5 huvuddelar; f\u00f6rsta delen behandlar spel med fullst\u00e4ndig information b\u00e5de p\u00e5 normal och extensiv form, den andra behandlar spel med ofullst\u00e4ndig information.",
     "similarity": 0.3969443738460541,
@@ -324,12 +336,6 @@
     "matched_outcome": "F\u00f6rst\u00e5 den teoretiska utvecklingen av disciplin i USA, Storbritannien, Frankrike och \u00f6vriga Europa ."
   },
   {
-    "course_code": "ES022A",
-    "chunk": "Studietakten \u00e4r h\u00f6g och f\u00f6ruts\u00e4tter intensiva studier.",
-    "similarity": 0.33022233843803406,
-    "matched_outcome": "Text och ordkunskap II 5 hp F\u00f6r godk\u00e4nt resultat p\u00e5 delkursen ska studenten kunna uppvisa ut\u00f6kade grundl\u00e4ggande kunskaper i det spanska ordf\u00f6rr\u00e5det ."
-  },
-  {
     "course_code": "PSTP46",
     "chunk": "Under termin 2 - 4 tr\u00e4ffas studenterna i grupper om cirka 12 studenter en halv dag/termin tillsammans med en l\u00e4rare som ska ha god professionell f\u00f6rankring.",
     "similarity": 0.2652257978916168,
@@ -388,6 +394,12 @@
     "chunk": "Delar av kursen bygger p\u00e5 s.k. casemetodik.",
     "similarity": 0.24338720738887787,
     "matched_outcome": "Du ska kunna visa f\u00f6rdjupad f\u00f6rm\u00e5ga att genomf\u00f6ra kvalificerad juridisk argumentation och utf\u00f6ra juridiska resonemang i s\u00e5v\u00e4l skrift som genom muntliga anf\u00f6randen ."
+  },
+  {
+    "course_code": "SUKSO3",
+    "chunk": "En individuell VFU-plan utformas i samverkan mellan VFU-handledare och student.",
+    "similarity": 0.4087327718734741,
+    "matched_outcome": "Utifr\u00e5n egna erfarenheter v\u00e4rdera teoretiska kunskaper och f\u00e4rdigheter i praktisk handling samt tydligg\u00f6ra framtida egna kunskapsbehov inom socialt arbete ."
   },
   {
     "course_code": "PSPR42",
@@ -466,12 +478,6 @@
     "chunk": "Grundl\u00e4ggande terminologi f\u00f6r litter\u00e4r analys introduceras och f\u00f6rm\u00e5gan att tolka litter\u00e4ra texter utifr\u00e5n deras historiska kontext \u00f6vas.",
     "similarity": 0.3467608690261841,
     "matched_outcome": "Du ska ha god k\u00e4nnedom om rysk/polsk/tjeckisk/ukrainsk/belarusisk historia, kultur, litteratur och politik ."
-  },
-  {
-    "course_code": "SOD100",
-    "chunk": "Kognition 7,5 hp.",
-    "similarity": 0.340671181678772,
-    "matched_outcome": "Du ska kunna till\u00e4mpa grundl\u00e4ggande beteendevetenskapliga begrepp och modeller inom de tre \u00e4mnena ."
   },
   {
     "course_code": "HI1311",
@@ -1140,6 +1146,12 @@
     "matched_outcome": "Du ska kunna med stringent spr\u00e5kbehandling diskutera och v\u00e4rdera teorierna och metoderna samt till\u00e4mpning av dessa p\u00e5 den l\u00e4sta litteraturen ."
   },
   {
+    "course_code": "SOA200",
+    "chunk": "Utbudet av specialkurser kan variera fr\u00e5n en termin till en annan.",
+    "similarity": 0.4079548716545105,
+    "matched_outcome": "Du ska kunna visa f\u00f6rm\u00e5ga att f\u00f6rst\u00e5 och reflektera kring inneh\u00e5llet i en sociologisk studie ."
+  },
+  {
     "course_code": "SLKPS2",
     "chunk": "Grundl\u00e4ggande terminologi f\u00f6r litter\u00e4r analys introduceras och f\u00f6rm\u00e5gan att tolka litter\u00e4ra texter utifr\u00e5n deras historiska kontext \u00f6vas.",
     "similarity": 0.3467608690261841,
@@ -1336,18 +1348,6 @@
     "chunk": "Arbetena kan genomf\u00f6ras enskilt eller i grupp om maximalt tv\u00e5 studerande.",
     "similarity": 0.2406909167766571,
     "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin ."
-  },
-  {
-    "course_code": "FAA701",
-    "chunk": "Kursen best\u00e5r av en sammanh\u00e5llen kurs om 7,5 hp.",
-    "similarity": 0.1727067530155182,
-    "matched_outcome": "Du ska kunna sj\u00e4lvst\u00e4ndigt och reflekterande diskutera aktuella centrala teorier och metoder inom finsk spr\u00e5kvetenskap ."
-  },
-  {
-    "course_code": "LV3100",
-    "chunk": "F\u00f6rdjupning, 7.5 hp.",
-    "similarity": 0.33279597759246826,
-    "matched_outcome": "Du ska kunna vara orienterad om aktuella forskningsfr\u00e5gor. F\u00f6rdjupning ."
   },
   {
     "course_code": "TYA710",
@@ -1636,6 +1636,12 @@
     "chunk": "b. Kursen best\u00e5r av f\u00f6ljande moment: I: Teori 13,5 hp (Theory) II: Exkursion 1,5 hp (Excursion)",
     "similarity": 0.3893069624900818,
     "matched_outcome": "Du ska kunna planera och genomf\u00f6ra ett mindre projekt och presentera resultaten i form av en vetenskaplig text och en muntlig presentation ."
+  },
+  {
+    "course_code": "ENG1H1",
+    "chunk": "Tyngdpunkten ligger p\u00e5 problematiseringar av traditionella sanningar och sj\u00e4lva gr\u00e4nsbegreppet - var g\u00e5r gr\u00e4nsen mellan m\u00e4nniska och djur, hur definieras den, vem definierar den, och vilka etiska aspekter ber\u00f6rs?",
+    "similarity": 0.4084293842315674,
+    "matched_outcome": "Du ska kunna argumentera med kritisk distans om kursens sk\u00f6nlitter\u00e4ra, teoretiska och kritiska texter ."
   },
   {
     "course_code": "FI20N1",
@@ -2334,6 +2340,12 @@
     "matched_outcome": "Du ska ha k\u00e4nnedom om huvudlinjerna i den moderna sociologins utveckling ."
   },
   {
+    "course_code": "IB472D",
+    "chunk": "F\u00f6retagsklimatet \u00e4r idag utsatt f\u00f6r h\u00e5rd konkurrens.",
+    "similarity": 0.40783530473709106,
+    "matched_outcome": "Du ska kunna visa f\u00f6rst\u00e5else f\u00f6r kunskapen i strategisk IT-management ."
+  },
+  {
     "course_code": "SV7075",
     "chunk": "Syftet med kursen \u00e4r trefaldigt.",
     "similarity": 0.28013408184051514,
@@ -2374,12 +2386,6 @@
     "chunk": "Fourieranalys av periodiska f\u00f6rlopp.",
     "similarity": 0.2661198377609253,
     "matched_outcome": "Du ska kunna praktiskt applicera fourieranalys ."
-  },
-  {
-    "course_code": "FK5021",
-    "chunk": "Teori (Theory), 2 hp.",
-    "similarity": 0.36184918880462646,
-    "matched_outcome": "Du ska kunna redog\u00f6ra f\u00f6r och anv\u00e4nda de statistiska metoder som behandlas i kursen ."
   },
   {
     "course_code": "FK5021",
@@ -2446,12 +2452,6 @@
     "chunk": "Tyngdpunkten ligger dock p\u00e5 hur myndigheter s\u00f6ker minimera risker inom sina dom\u00e4ner.",
     "similarity": 0.3913452625274658,
     "matched_outcome": "Du ska kunna bed\u00f6ma kvaliteten hos olika slag av riskananlyser ."
-  },
-  {
-    "course_code": "BL7043",
-    "chunk": "2. Projekt 7,5 hp.",
-    "similarity": 0.31264859437942505,
-    "matched_outcome": "Du ska kunna arbeta med inom omr\u00e5det vanligt f\u00f6rekommande laborativa tekniker ."
   },
   {
     "course_code": "NS7075",
@@ -2731,12 +2731,6 @@
   },
   {
     "course_code": "FK5025",
-    "chunk": "LABB.",
-    "similarity": 0.1283837854862213,
-    "matched_outcome": "Du ska kunna anv\u00e4nda begreppen tillst\u00e5ndst\u00e4thet och reciproka gittret f\u00f6r att l\u00f6sa problem (TEOR)"
-  },
-  {
-    "course_code": "FK5025",
     "chunk": "Laboration, 0.5 hp.",
     "similarity": 0.2854093909263611,
     "matched_outcome": "Du ska kunna anv\u00e4nda begreppen tillst\u00e5ndst\u00e4thet och reciproka gittret f\u00f6r att l\u00f6sa problem (TEOR)"
@@ -2749,21 +2743,9 @@
   },
   {
     "course_code": "FK5028",
-    "chunk": "Teori (Theory), 6 hp.",
-    "similarity": 0.3774145841598511,
-    "matched_outcome": "Du ska kunna diskutera olika typer av radioaktivt s\u00f6nderfall och kunna till\u00e4mpa ekvationer for series\u00f6nderfall ."
-  },
-  {
-    "course_code": "FK5028",
     "chunk": "LABB.",
     "similarity": 0.13673904538154602,
     "matched_outcome": "Du ska kunna anv\u00e4nda s\u00f6nderfallsschema ."
-  },
-  {
-    "course_code": "FK5028",
-    "chunk": "Laboration (Lab exercise), 1,5 hp.",
-    "similarity": 0.350283682346344,
-    "matched_outcome": "Du ska kunna till\u00e4mpa dessa kunskaper p\u00e5 problem inom str\u00e5lterapi, diagnostik och str\u00e5lskydd ."
   },
   {
     "course_code": "MO4000",
@@ -2791,15 +2773,9 @@
   },
   {
     "course_code": "FK5030",
-    "chunk": "Teori (Theory), 6 hp.",
-    "similarity": 0.31419163942337036,
+    "chunk": "Teori (Theory), 6 hp. LABB.",
+    "similarity": 0.312115877866745,
     "matched_outcome": "Du ska kunna beskriva principer f\u00f6r olika detektorer ."
-  },
-  {
-    "course_code": "FK5030",
-    "chunk": "LABB.",
-    "similarity": 0.030432287603616714,
-    "matched_outcome": "Du ska kunna f\u00f6ra en diskussion r\u00f6rande olika m\u00e4tmetoders noggrannhet, samt hur m\u00e4tdata anges ."
   },
   {
     "course_code": "FK5030",
@@ -2853,6 +2829,12 @@
     "course_code": "JU225H",
     "chunk": "Den omfattande anv\u00e4ndningen av IT g\u00f6r att tidigare avgr\u00e4nsningar mellan organisatoriska enheter som myndigheter och f\u00f6retag tenderar att suddas ut genom kommunikation i digitala n\u00e4tverk och virtuella organisationer.",
     "similarity": 0.3354376554489136,
+    "matched_outcome": "Du ska kunna visa f\u00f6rdjupad kunskap i och f\u00f6rst\u00e5else av de komplexa juridiska fr\u00e5gest\u00e4llningar som g\u00f6r sig g\u00e4llande p\u00e5 r\u00e4ttsinformatikens omr\u00e5de, det g\u00e4ller s\u00e4rskilt i fr\u00e5ga om hur olika regelverk samspelar ."
+  },
+  {
+    "course_code": "JU225H",
+    "chunk": "Kursen \u00e4r indelad i tre block som vart och ett omfattar undervisning i form f\u00f6rel\u00e4sningar och seminarier till vilket studenterna ska f\u00f6rbereda och redovisa s\u00e4rskilda uppgifter.",
+    "similarity": 0.4080256223678589,
     "matched_outcome": "Du ska kunna visa f\u00f6rdjupad kunskap i och f\u00f6rst\u00e5else av de komplexa juridiska fr\u00e5gest\u00e4llningar som g\u00f6r sig g\u00e4llande p\u00e5 r\u00e4ttsinformatikens omr\u00e5de, det g\u00e4ller s\u00e4rskilt i fr\u00e5ga om hur olika regelverk samspelar ."
   },
   {
@@ -2976,12 +2958,6 @@
     "matched_outcome": "Du ska kunna analysera ."
   },
   {
-    "course_code": "KB5006",
-    "chunk": "b. Kursen best\u00e5r av f\u00f6ljande delar:  1) Teori (Theory) 7,5 hp.",
-    "similarity": 0.3603578805923462,
-    "matched_outcome": "Du ska kunna visa goda kunskaper om och f\u00f6rst\u00e5else f\u00f6r proteiner och deras roll i biologiska system ."
-  },
-  {
     "course_code": "FK7063",
     "chunk": "Paralleller ges inom bildbehandling som anv\u00e4nder 2-dimensionella Fouriertransformen.",
     "similarity": 0.3341767191886902,
@@ -3022,12 +2998,6 @@
     "chunk": "Intag och deponering i olika organ diskuteras och ber\u00e4knas.",
     "similarity": 0.34823718667030334,
     "matched_outcome": "Du ska kunna diskutera radonproblematiken och str\u00e5lskyddsproblem samt riskbed\u00f6mningar i samband med k\u00e4rnkraft med h\u00e4nsyn till normal drift och k\u00e4rnkraftsolyckor ."
-  },
-  {
-    "course_code": "FK8030",
-    "chunk": "LABB.",
-    "similarity": 0.2493155300617218,
-    "matched_outcome": "Del TEOR, Teori (Theory) 5,5 hp ."
   },
   {
     "course_code": "JU640A",
@@ -3162,12 +3132,6 @@
     "matched_outcome": "Formulera ett v\u00e4l uppbyggt och vetenskapligt f\u00f6rankrat argument ."
   },
   {
-    "course_code": "MT5013",
-    "chunk": "Del 2, Laborationer (Practical Exercises) 3 hp.",
-    "similarity": 0.406582772731781,
-    "matched_outcome": "Du ska kunna till\u00e4mpa grundl\u00e4ggande tekniker f\u00f6r reproducerbar dataanalys. F\u00f6rv\u00e4ntade studieresultat h\u00f6r till alla kursdelarna ."
-  },
-  {
     "course_code": "ML412N",
     "chunk": "Kursen inneh\u00e5ller forskningsbes\u00f6k hos industriella samarbetspartners.",
     "similarity": 0.37330034375190735,
@@ -3195,6 +3159,12 @@
     "course_code": "IT1VA1",
     "chunk": "Kursen riktar sig till studenter inom VAL-projektet.",
     "similarity": 0.3586041331291199,
+    "matched_outcome": "Du ska kunna g\u00f6ra skriftliga sammanfattningar och skriva kortare texter p\u00e5 italienska ."
+  },
+  {
+    "course_code": "IT1LP2",
+    "chunk": "Kursen riktar sig till studenter som \u00e4r antagna p\u00e5 \u00c4mnesl\u00e4rarprogrammet med inriktning mot arbete i gymnasieskolan.",
+    "similarity": 0.407892107963562,
     "matched_outcome": "Du ska kunna g\u00f6ra skriftliga sammanfattningar och skriva kortare texter p\u00e5 italienska ."
   },
   {
@@ -3318,12 +3288,6 @@
     "matched_outcome": "Du ska kunna sj\u00e4lvst\u00e4ndigt och kritiskt bed\u00f6ma och v\u00e4rdera juridiska fr\u00e5gest\u00e4llningar p\u00e5 den konstitutionella r\u00e4ttens omr\u00e5de med h\u00e4nsyn till relevanta samh\u00e4lleliga fr\u00e5gor ."
   },
   {
-    "course_code": "MI7014",
-    "chunk": "Del 2: Verktyg (Tools), 3,5 hp.",
-    "similarity": 0.302875816822052,
-    "matched_outcome": "Du ska kunna identifiera och analysera systemet och dess st\u00f6rningar inklusive mekanismer och effekter (del 3)"
-  },
-  {
     "course_code": "FV7326",
     "chunk": "Kursen utforskar r\u00f6rliga bildmedier inom svenskt kultur- och samh\u00e4llsliv fr\u00e5n filmens genombrott fram till dagens medienv\u00e4ndning.",
     "similarity": 0.3536045253276825,
@@ -3358,12 +3322,6 @@
     "chunk": "Kointegration och icke-linj\u00e4ra modeller.",
     "similarity": 0.331737220287323,
     "matched_outcome": "Du ska kunna med sannolikhetsteoretiska resonemang, h\u00e4rleda metodernas egenskaper ."
-  },
-  {
-    "course_code": "MT5014",
-    "chunk": "Del 2, Fallstudier (Case studies) 1,5 hp.",
-    "similarity": 0.351036936044693,
-    "matched_outcome": "Du ska kunna bed\u00f6ma giltighet och relevans av statistiska modeller i relation till fr\u00e5gest\u00e4llning och data ."
   },
   {
     "course_code": "FILVE2",
@@ -3750,6 +3708,12 @@
     "matched_outcome": "Du ska kunna till\u00e4mpa klassisk metodologi och/eller moderna molekyl\u00e4rbaserade metoder f\u00f6r att svara p\u00e5 grundl\u00e4ggande fr\u00e5gest\u00e4llning inom mikrobiell ekologiskt forskningsomr\u00e5de (del 2, 3)"
   },
   {
+    "course_code": "BL7057",
+    "chunk": "b. Kursen best\u00e5r av f\u00f6ljande delar: \u2022 Del 1, teori (Theory), 3,75 hp \u2022 Del 2, laborationer (laboratory exercises), 3,75 hp \u2022 Del 3, Projektarbete (project work), 7,5 hp",
+    "similarity": 0.40860143303871155,
+    "matched_outcome": "Du ska kunna till\u00e4mpa klassisk metodologi och/eller moderna molekyl\u00e4rbaserade metoder f\u00f6r att svara p\u00e5 grundl\u00e4ggande fr\u00e5gest\u00e4llning inom mikrobiell ekologiskt forskningsomr\u00e5de (del 2, 3)"
+  },
+  {
     "course_code": "IB410N",
     "chunk": "Extended Reality (XR) \u00e4r ett samlingsbegrepp f\u00f6r olika former av immersiva milj\u00f6er, som kan vara exempelvis \u201dVirtual Reality\u201d (VR), \u201dAugmented Reality\u201d (AR) eller \u201dMixed Reality\u201d (MR).",
     "similarity": 0.3353763818740845,
@@ -3790,12 +3754,6 @@
     "chunk": "b. Kursen best\u00e5r av f\u00f6ljande moment: - Del 1, Teori (Theory), 4,5 hp - Del 2, Laborationer (Practical Exercises), 3 hp",
     "similarity": 0.3897327780723572,
     "matched_outcome": "Du ska kunna anv\u00e4nda fr\u00e5gespr\u00e5ket SQL f\u00f6r att arbeta med en databashanterare, interaktivt och fr\u00e5n ett generellt programmeringsspr\u00e5k (Teori, Laborationer)"
-  },
-  {
-    "course_code": "LV3000",
-    "chunk": "2. F\u00f6rdjupning, 7.5 hp.",
-    "similarity": 0.272774875164032,
-    "matched_outcome": "Du ska kunna visa insikt i valt aktuellt forskningsf\u00e4lt ."
   },
   {
     "course_code": "MM7042",
@@ -4054,12 +4012,6 @@
     "chunk": "b. Kursen best\u00e5r av f\u00f6ljande delar: Del 1, Teori (THEORY), 4.5 hp Del 2, Laborationer (LABORATORY Exercises), 3 hp",
     "similarity": 0.39518284797668457,
     "matched_outcome": "Du ska kunna redog\u00f6ra f\u00f6r tillverkningsprocessen f\u00f6r produkter med avseende p\u00e5 en cirkul\u00e4r ekonomi Del 2, Laborationer, 3 hp ."
-  },
-  {
-    "course_code": "MT3003",
-    "chunk": "Del 3, Tentamen (Exam) 1,5 hp.",
-    "similarity": 0.34860843420028687,
-    "matched_outcome": "Du ska kunna till\u00e4mpa och redog\u00f6ra f\u00f6r l\u00e4mpliga metoder f\u00f6r att visualisera en given aspekt av data (del 1 till3)"
   },
   {
     "course_code": "USS22C",
@@ -4332,6 +4284,12 @@
     "matched_outcome": "Visa f\u00f6rm\u00e5ga att p\u00e5 ett kritiskt och vetenskapligt s\u00e4tt analysera \u00f6versatt arabisk sakprosa inom ett avgr\u00e4nsat problemomr\u00e5de, inbegripet att p\u00e5 ett sj\u00e4lvst\u00e4ndigt s\u00e4tt redog\u00f6ra f\u00f6r teman och diskurser i texten och hur dessa kan belysas utifr\u00e5n befintlig teori ."
   },
   {
+    "course_code": "US360G",
+    "chunk": "Kursen best\u00e5r av tv\u00e5 delkurser.",
+    "similarity": 0.4082111120223999,
+    "matched_outcome": "Du ska kunna planera och diskutera spr\u00e5kutvecklande skrivundervisning ur ett f\u00f6rsta-, andraspr\u00e5ks- och genreperspektiv ."
+  },
+  {
     "course_code": "CTS312",
     "chunk": "Informationen l\u00e4ggs ut senast en m\u00e5nad innan kursen startar.",
     "similarity": 0.36831510066986084,
@@ -4492,6 +4450,12 @@
     "chunk": "b. Kursen best\u00e5r av f\u00f6ljande delar: Del 1, Teori (THEORY), 5 hp Del 2, Laborationer (LABORATORY Exercises), 2.5 hp",
     "similarity": 0.38262057304382324,
     "matched_outcome": "Du ska kunna utv\u00e4rdera och till\u00e4mpa cyklisk voltammetri och elektrolys inom gr\u00f6n kemi ."
+  },
+  {
+    "course_code": "KZ8024",
+    "chunk": "a. Kursen ger en \u00f6versikt \u00f6ver flertalet huvudtyper av f\u00f6rnybara energik\u00e4llor, s\u00e5som solcellsenheter, solv\u00e4rme och fotokemisk omvandling, olika typer av batterier samt v\u00e4teproduktion.",
+    "similarity": 0.40778836607933044,
+    "matched_outcome": "Du ska kunna kritiskt utv\u00e4rdera \u00e5tervinningsteknik f\u00f6r avfall med avseende p\u00e5 h\u00e5llbarhet ."
   },
   {
     "course_code": "KZ8024",

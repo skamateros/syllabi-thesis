@@ -1,4 +1,3 @@
-import numpy as np
 import json
 import re
 
@@ -16,7 +15,7 @@ def sliding_window(sentences, window_size=2, stride=1):
     return chunks
 
 def get_sentences(text):
-    abbreviations = ['t.ex.', 'd.v.s.', 'm.m.', 'bl.a.', 'etc.', 'e.g.', 'i.e.', 'ca.', 'ev.', 'fr.o.m.', 't.o.m.', 'inkl.', 'exkl.', 'o.s.v.']
+    abbreviations = ['hp.', 't.ex.', 'd.v.s.', 'm.m.', 'bl.a.', 'etc.', 'e.g.', 'i.e.', 'ca.', 'ev.', 'fr.o.m.', 't.o.m.', 'inkl.', 'exkl.', 'o.s.v.']
     placeholder_map = {}
     for i, abbr in enumerate(abbreviations):
         placeholder = f"__ABBR_{i}__"
@@ -52,7 +51,7 @@ def main():
 
     output = {}
 
-    match_per = 'outcome' # content or outcome
+    match_per = input("Match per 'content' or 'outcome': ").strip().lower()
 
     for course in corpus['Course-list']:
         content_chunks = get_sentences(course['CourseContent'])
