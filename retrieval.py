@@ -28,18 +28,17 @@ def main():
             )
             outcomes = '. '.join(course['ILO-list-sv'])
             outcome_embeddings.append(model.encode(outcomes, convert_to_tensor=True, device=device))
-            # outcome_embeddings.append(torch.mean(outcome_emb, dim=0))
         
         return course_info, content_embeddings, outcome_embeddings
         
     def tfidf():
-        with open('data/SU.lemmatized.filtered.json', 'r') as f:
+        with open('data/SU.lemmatized.json', 'r') as f:
             corpus = json.load(f)
 
-        def tokens2string(tokens):
+        def tokens2string(tokens: list) -> str:
             return ' '.join(tokens)
 
-        all_texts = [tokens2string(course['CourseContent']) for course in corpus['Course-list']] + [tokens2string(outcome) for course in corpus['Course-list'] for outcome in course['ILO-list-sv']]
+        all_texts = [tokens2string(chunk) for course in corpus['Course-list'] for chunk in course['CourseContent']] + [tokens2string(outcome) for course in corpus['Course-list'] for outcome in course['ILO-list-sv']]
 
         print('Fitting TF-IDF vectorizer...')
         vectorizer = TfidfVectorizer()
@@ -51,8 +50,9 @@ def main():
 
         for course in corpus['Course-list']:
             course_info.append({'CourseCode': course['CourseCode'], 'Department': course['Department']})
+            content_chunks = '. '.join([tokens2string(chunk) for chunk in course['CourseContent']])
             content_embeddings.append(
-                torch.tensor(vectorizer.transform([tokens2string(course['CourseContent'])]).toarray()[0], dtype=torch.float32)
+                torch.tensor(vectorizer.transform([content_chunks]).toarray()[0], dtype=torch.float32)
             )
             outcomes = '. '.join([tokens2string(outcome) for outcome in course['ILO-list-sv']])
             outcome_embeddings.append(
@@ -128,8 +128,8 @@ def main():
     device = torch.device('mps' if torch.mps.is_available() else 'cpu')
     print(f'Using device: {device}')
 
-    method = 'hybrid'  # 'sbert', 'tfidf', or 'hybrid'
-    reverse = True # If True, retrieves outcomes given content. If False, retrieves content given outcomes.
+    method = 'sbert'  # 'sbert', 'tfidf', or 'hybrid'
+    reverse = False # If True, retrieves outcomes given content. If False, retrieves content given outcomes.
 
     if reverse:
         print("Retrieving outcomes given content...")
