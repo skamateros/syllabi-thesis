@@ -11,9 +11,6 @@ tfidf2.py
 #Trash folder
 unused
 
-# Should remove before publishing
-requirements.txt
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
