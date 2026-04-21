@@ -11,7 +11,7 @@ def filter_corpus(corpus):
 def main():
     import json
 
-    with open('data/SU.heuristics.json', 'r') as f:
+    with open('../data/SU.heuristics.json', 'r') as f:
         corpus = json.load(f)
 
     print('Before', len(corpus['Course-list']))
@@ -20,7 +20,7 @@ def main():
 
     print('After', len(corpus['Course-list']))
 
-    with open('data/SU.filtered.json', 'w') as f:
+    with open('../data/SU.filtered.json', 'w') as f:
         json.dump(corpus, f, indent=2)
 
 if __name__ == '__main__':

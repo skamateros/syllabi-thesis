@@ -7,7 +7,7 @@ def tokens2string(tokens):
     return ' '.join(tokens)
 
 def main():
-    with open('data/SU.lemmatized.json', 'r') as f:
+    with open('../data/SU.lemmatized.json', 'r') as f:
         corpus = json.load(f)
 
     match_per = 'outcome'  # 'content' or 'outcome'
@@ -95,7 +95,7 @@ def main():
             raise ValueError("Invalid match_per value. Use 'content' or 'outcome'.")
 
     print('Saving similarities to JSON file...')
-    with open(f'data/{match_per}.tfidf.similarities.json', 'w') as f:
+    with open(f'../data/{match_per}.tfidf.similarities.json', 'w') as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
 

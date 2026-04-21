@@ -11,7 +11,7 @@ def main():
         
     def sbert():
 
-        with open('data/SU.filtered.json', 'r') as f:
+        with open('../data/SU.filtered.json', 'r') as f:
             corpus = json.load(f)
             
         model = SentenceTransformer('KBLab/sentence-bert-swedish-cased', device=device)
@@ -32,7 +32,7 @@ def main():
         return course_info, content_embeddings, outcome_embeddings
         
     def tfidf():
-        with open('data/SU.lemmatized.json', 'r') as f:
+        with open('../data/SU.lemmatized.json', 'r') as f:
             corpus = json.load(f)
 
         def tokens2string(tokens: list) -> str:
@@ -128,8 +128,8 @@ def main():
     device = torch.device('mps' if torch.mps.is_available() else 'cpu')
     print(f'Using device: {device}')
 
-    method = 'sbert'  # 'sbert', 'tfidf', or 'hybrid'
-    reverse = False # If True, retrieves outcomes given content. If False, retrieves content given outcomes.
+    method = 'tfidf'  # 'sbert', 'tfidf', or 'hybrid'
+    reverse = True  # If True, retrieves outcomes given content. If False, retrieves content given outcomes.
 
     if reverse:
         print("Retrieving outcomes given content...")
@@ -193,7 +193,7 @@ def main():
 
     if reverse:
         method = 'reverse.' + method
-    with open(f'data/{method}_retrieval.similarities.json', 'w') as f:
+    with open(f'../data/{method}_retrieval.similarities.json', 'w') as f:
         json.dump(results, f, indent=2)
 
         

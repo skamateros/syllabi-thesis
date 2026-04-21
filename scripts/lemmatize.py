@@ -12,7 +12,7 @@ def main():
     nltk.download('stopwords')
     stop_words = set(nltk.corpus.stopwords.words('swedish'))
 
-    with open('data/SU.filtered.json', 'r') as f:
+    with open('../data/SU.filtered.json', 'r') as f:
         corpus = json.load(f)
 
     content_texts = [course['CourseContent'] for course in corpus['Course-list']]
@@ -51,7 +51,7 @@ def main():
         ]
         ilo_idx += n_ilos
 
-    with open('data/SU.lemmatized.json', 'w') as f:
+    with open('../data/SU.lemmatized.json', 'w') as f:
         json.dump(corpus, f, indent=2, ensure_ascii=False)
 
 

@@ -44,7 +44,7 @@ def main():
     device = torch.device('mps' if torch.mps.is_available() else 'cpu')
     print(f'Using device: {device}')
 
-    with open('data/SU.filtered.json', 'r') as f:
+    with open('../data/SU.filtered.json', 'r') as f:
         corpus = json.load(f)
           
     model = SentenceTransformer('KBLab/sentence-bert-swedish-cased', device=device)
@@ -97,7 +97,7 @@ def main():
         else: 
             raise ValueError("Invalid match_per value. Use 'content' or 'outcome'.")
 
-    with open(f'data/{match_per}.sbert.similarities.json', 'w') as f:
+    with open(f'../data/{match_per}.sbert.similarities.json', 'w') as f:
         json.dump(output, f, indent=2, cls=TensorEncoder)
 
 if __name__ == '__main__':

@@ -10,7 +10,7 @@ def get_threshold(sims):
 
 for i in ['outcome', 'content']:
     for j in ['tfidf', 'sbert']:
-        with open(f'data/{i}.{j}.similarities.json', 'r') as f:
+        with open(f'../data/{i}.{j}.similarities.json', 'r') as f:
             data = json.load(f)
 
         threshold = get_threshold([
@@ -47,5 +47,5 @@ for i in ['outcome', 'content']:
             else:
                 raise ValueError("Invalid i value. Use 'content' or 'outcome'.")
             
-        with open(f'data/outliers.{i}.{j}.json', 'w') as f:
+        with open(f'../data/outliers.{i}.{j}.json', 'w') as f:
             json.dump(output, f, indent=2)
