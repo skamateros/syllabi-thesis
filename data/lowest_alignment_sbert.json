@@ -1,0 +1,486 @@
+{
+    "lowest_ilos_to_content": [
+        {
+            "course_code": "TVPSGF",
+            "department": "106",
+            "outcome": "7.5 hp .",
+            "similarity": -0.016611019149422646,
+            "matched_chunk": "Kursen best\u00e5r av f\u00f6ljande delar: Delkurs 1 introducerar och diskuterar teater- och performancestudier, intersektionell genusteori och feministisk teori ur ett nutida perspektiv.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "KZ4016",
+            "department": "434",
+            "outcome": "F\u00f6r del .",
+            "similarity": 0.017827093601226807,
+            "matched_chunk": "b. Kursen best\u00e5r av tv\u00e5 delar: 1. Statistik (Statistics) 4 hp 2. Dataanalys (Computational data analysis) 3.5 hp",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "GG1003",
+            "department": "464",
+            "outcome": "Du ska kunna terti\u00e4rgr\u00e4nsen .",
+            "similarity": 0.04208043962717056,
+            "matched_chunk": "Kursen kommer att behandla: \u2022\tlivets utveckling p\u00e5 Jorden (evertebrater, fiskar, amfibier fram till dinosaurierna) \u2022\tdiversifieringen av dinosaurierna och de olika dinosauriegrupperna \u2022\tskillnaderna mellan endoterma och exoterma ryggradsdjur \u2022\tpaleogeografin under den mesozoiska eran \u2022\tutvecklingen av f\u00e5glarna \u2013 dinosauriernas n\u00e4rmaste nu levande sl\u00e4ktingar \u2022\tkrita-terti\u00e4rgr\u00e4nsen och dinosauriernas utd\u00f6ende",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "FK5023",
+            "department": "402",
+            "outcome": "Du ska kunna anv\u00e4nda \"\"aufbau .",
+            "similarity": 0.06898023933172226,
+            "matched_chunk": "Atomers och molekylers v\u00e4xelverkan med elektromagnetisk str\u00e5lning studeras d\u00e4r urvalsregler diskuteras.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "AS7003",
+            "department": "401",
+            "outcome": "Du ska kunna till .",
+            "similarity": 0.07262220978736877,
+            "matched_chunk": "Kursen behandlar grundl\u00e4ggande teoretiska, praktiska och tekniska f\u00f6ruts\u00e4ttningar f\u00f6r detektering av astronomiska signaler, fr\u00e4mst  elektromagnetisk (EM) str\u00e5lning.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "MI7015",
+            "department": "485",
+            "outcome": "Du ska kunna f\u00f6rklara .",
+            "similarity": 0.08353454619646072,
+            "matched_chunk": "a. Kursen behandlar toxikologiska grundprinciper med syftet att f\u00f6rst\u00e5 de faror som kemiska f\u00f6roreningar utg\u00f6r f\u00f6r levande organismer.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "MO8010",
+            "department": "404",
+            "outcome": "Du ska kunna problemet .",
+            "similarity": 0.09072545915842056,
+            "matched_chunk": "Kursen inneh\u00e5ller:   \u2022 gr\u00e4nsskiktets observerade struktur  \u2022 Reynolds-uppdelning och medelv\u00e4rdesbildning  \u2022 turbulent energi och turbulenta fl\u00f6den  \u2022 m\u00e4ttekniker och analysverktyg  \u2022 closure-problemet  \u2022 turbulenta kinetiska energiekvationen  \u2022 similaritetsteori, tex Monin-Obukhov-teorin  \u2022 Ekmanskikt  \u2022 turbulensspektra  \u2022 dispersion i gr\u00e4nsskikt.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "HI1332",
+            "department": "104",
+            "outcome": "Du ska kunna till idag .",
+            "similarity": 0.09948203712701797,
+            "matched_chunk": "Kursen ger en bred introduktion till modern afrikansk historia s\u00f6der om Sahara fr\u00e5n tidigt 1800-tal till idag.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "FK7054",
+            "department": "402",
+            "outcome": "Egenskaper .",
+            "similarity": 0.12601161003112793,
+            "matched_chunk": "Kursen beskriver processer och material inom mikrofabrikation (fotolitografi, olika typer av deponering och etsning av tunna filmer), nanofabrikationsprocesser (elektronstr\u00e5lelitografi och etsning med hj\u00e4lp av fokuserad jonstr\u00e5le) och olika karakteriseringsmetoder och renrumsutrustning.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "PH21G0",
+            "department": "333",
+            "outcome": "J\u00e4mf\u00f6ra .",
+            "similarity": 0.13333728909492493,
+            "matched_chunk": "Efter genomf\u00f6rd kurs ska studenten ocks\u00e5 besitta en f\u00f6rm\u00e5ga att kritiskt reflektera \u00f6ver och f\u00f6rst\u00e5 centrala teorier bakom sambanden mellan sociala och samh\u00e4lleliga faktorer och h\u00e4lsoutfall.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "AR1000",
+            "department": "108",
+            "outcome": "Du ska kunna visa .",
+            "similarity": 0.15155085921287537,
+            "matched_chunk": "K\u00e4llmaterialet \u00e4r fornsaker och fornl\u00e4mningsmilj\u00f6er samt historiska k\u00e4llor.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "GG1006",
+            "department": "464",
+            "outcome": "Du ska kunna och L .",
+            "similarity": 0.15314288437366486,
+            "matched_chunk": "Kursen behandlar: \u2022\tJordens storskaliga utveckling \u2022\tplattektonik \u2022\tf\u00f6rkastningar \u2022\tseismiska v\u00e5gor  \u2022\tkvantitativ seismologi \u2022\ttsunami, jordskred och vulkanutbrott \u2022\tm\u00f6jligheter att f\u00f6ruts\u00e4ga jordb\u00e4vningar \u2022\tm\u00e4nniskors f\u00f6rh\u00e5llande till jordb\u00e4vningar",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "GG1009",
+            "department": "464",
+            "outcome": "Du ska kunna amfibier .",
+            "similarity": 0.16135409474372864,
+            "matched_chunk": "a. Kursen behandlar: \u2022\tproblematiken om livets ursprung \u2022\tde f\u00f6rsta bakterierna \u2022\tuppkomsten av flercelliga organismer \u2022\tden kambriska explosionen \u2022\tv\u00e4xtv\u00e4rldens utveckling \u2022\tfr\u00e5n fisk till amfibie, ett stort steg \u2022\td\u00e4ggdjurens utveckling  \u2022\tevolutionsteori  b. Kursen best\u00e5r av f\u00f6ljande moment: 1. Exkursion 1,5 hp (Field Trip) 2. Teori 6 hp (Theory)",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "BL7036",
+            "department": "460",
+            "outcome": "Du ska kunna konstruera och anv\u00e4nda best\u00e4mningsnycklar .",
+            "similarity": 0.17389115691184998,
+            "matched_chunk": "Kursen behandlar f\u00f6ljande: * insekternas m\u00e5ngfald, fylogeni och evolution * j\u00e4mf\u00f6rande insektsmorfologi och terminologi * molekyl\u00e4ra metoder i utforskningen av insektsfaunan * konstruktion och anv\u00e4ndning av best\u00e4mningsnycklar * insamlings- och preparationstekniker, inventeringsmetodik * projektplanering",
+            "category": "Unidentified Alignment"
+        },
+        {
+            "course_code": "GG7022",
+            "department": "464",
+            "outcome": "Du ska kunna sj\u00e4lvst\u00e4ndigt s\u00f6ka relevant litteratur .",
+            "similarity": 0.1753658652305603,
+            "matched_chunk": "Kursen behandlar: \u2022 samverkan mellan klimatsystemets olika delar (atmosf\u00e4ren, biosf\u00e4ren, litosf\u00e4ren, kryosf\u00e4ren, hydrosf\u00e4ren) \u2022 klimatsystemens utveckling \u00f6ver geologisk tid \u2022 anv\u00e4ndandet av geologiska klimatarkiv, inklusive terrestriska och marina borrk\u00e4rnor samt isk\u00e4rnor \u2022 tolkning och utv\u00e4rdering av paleoklimatologiska data",
+            "category": "True Misalignment"
+        },
+        {
+            "course_code": "GG7030",
+            "department": "464",
+            "outcome": "Du ska kunna diskutera resultat i nationella och internationella sammanhang .",
+            "similarity": 0.1825830638408661,
+            "matched_chunk": "Kursen behandlar: \u2022 metoder f\u00f6r provtagning av vatten, sediment, jord och bergarter \u2022 n\u00e4rings-, redox- och syra-baskemi i olika naturliga akvatiska milj\u00f6er \u2022 mikroorganismers inverkan p\u00e5 geokemiska processer \u2022 kvantifieringsmetoder av in-situ processer \u2022 utbytesprocesser mellan mark, sediment, vatten och atmosf\u00e4ren \u2022 elektrokemiska, spektrofotometriska, kromatografiska, och massspektroskopiska analysmetoder \u2022 statistisk utv\u00e4rdering av geokemiska data",
+            "category": "True Misalignment"
+        },
+        {
+            "course_code": "FK7066",
+            "department": "402",
+            "outcome": "Du ska kunna ljus .",
+            "similarity": 0.1874205768108368,
+            "matched_chunk": "F\u00f6r att belysa de teoretiska begreppen anv\u00e4nds exempel fr\u00e5n olika delar av den experimentella molekylfysiken s\u00e5som ultrasnabb laserspektrokopi, lagringsringar f\u00f6r joner och r\u00f6ntgen- och synkrotronljusstr\u00e5lning.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "KB7017",
+            "department": "431",
+            "outcome": "Du ska kunna anv\u00e4nda Linux f\u00f6r standarduppgifter .",
+            "similarity": 0.18847931921482086,
+            "matched_chunk": "Kursen behandlar grunderna f\u00f6r bioinformatik, speciellt metoder f\u00f6r att studera biologiska sekvensdata och sekvensstatistik.",
+            "category": "True Misalignment"
+        },
+        {
+            "course_code": "KB7021",
+            "department": "431",
+            "outcome": "Du ska kunna anv\u00e4nda Linux f\u00f6r standarduppgifter .",
+            "similarity": 0.18847931921482086,
+            "matched_chunk": "Kursen behandlar grunderna f\u00f6r bioinformatik, speciellt metoder f\u00f6r att studera biologiska sekvensdata och sekvensstatistik.",
+            "category": "True Misalignment"
+        },
+        {
+            "course_code": "GG1013",
+            "department": "464",
+            "outcome": "Du ska kunna sammans\u00e4ttningen .",
+            "similarity": 0.19025501608848572,
+            "matched_chunk": "a. Kursen behandlar: \u2022 grunderna i artbildning och definition av artbegreppet \u2022 evolutionsteori \u2022 genfl\u00f6desprocesser \u2022 sexuell selektion som grund f\u00f6r artbildning \u2022 geologiska/klimatologiska orsaker till artbildning \u2022 den kambriska explosionen \u2022 de stora utd\u00f6endeperiodernas dynamik \u2022 geologiska/klimatologiska orsaker till utd\u00f6enden \u2022 problematiken med invasiva arter  b. Kursen  best\u00e5r av f\u00f6ljande moment: 1. Exkursion 1,5 hp (Field Trip) 2. Teori 6 hp (Theory)",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "AS1002",
+            "department": "401",
+            "outcome": "Du ska kunna visa s\u00e5dana kunskaper som beh\u00f6vs f\u00f6r att .",
+            "similarity": 0.1907186359167099,
+            "matched_chunk": "Kursen behandlar: universums expansion, den kosmiska bakgrundsstr\u00e5lningen, de f\u00f6rsta sekunderna, grund\u00e4mnessyntesen, m\u00f6rk materia, m\u00f6rk energi, galax- och stj\u00e4rnbildning, universums storskaliga struktur och universums framtida \u00f6de.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "MM7024",
+            "department": "403",
+            "outcome": "Du ska kunna redog\u00f6ra f\u00f6r avv\u00e4gningen mellan bias och varians .",
+            "similarity": 0.19371522963047028,
+            "matched_chunk": "\u2022 Grundl\u00e4ggande ber\u00e4kningseffektiva algoritmer f\u00f6r stora matriser  \u2022 Principalkomponentanalys  \u2022 Glesa och underbest\u00e4mda system och deras relation till komprimering av data \u2022 Konstruktion av neurala n\u00e4tverk och modeller f\u00f6r djup inl\u00e4rning \u2022 Anpassning av hyperparametrar \u2022 Valda \u00e4mnen om s\u00e4rskilda matristyper",
+            "category": "Unidentified Alignment"
+        },
+        {
+            "course_code": "IH1380",
+            "department": "106",
+            "outcome": "Du ska kunna uppvisa en grundl\u00e4ggande analytisk och kommunikativ f\u00f6rm\u00e5ga i b\u00e5de tal och skrift .",
+            "similarity": 0.19489991664886475,
+            "matched_chunk": "Kursen behandlar ocks\u00e5 hur gl\u00e4dje har definierats, diskuterats och problematiserats inom olika filosofiska traditioner.",
+            "category": "True Misalignment"
+        },
+        {
+            "course_code": "AS7017",
+            "department": "401",
+            "outcome": "Du ska kunna visa f\u00f6rst\u00e5else f\u00f6r resultat av .",
+            "similarity": 0.19654718041419983,
+            "matched_chunk": "Kursen behandlar grundl\u00e4ggande stj\u00e4rnatmosf\u00e4rsfysik och metoder f\u00f6r att behandla str\u00e5lningstransport i dessa.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "ARO151",
+            "department": "108",
+            "outcome": "Du ska kunna visa f\u00f6rm\u00e5ga att redog\u00f6ra f\u00f6r och diskutera sitt kunnande med olika grupper .",
+            "similarity": 0.20268875360488892,
+            "matched_chunk": "Kursen ger studenter en introduktion i osteologisk analysmetodik och teoribildning med tyngdpunkt p\u00e5 anv\u00e4ndning i arkeologiska sammanhang.",
+            "category": "True Misalignment"
+        },
+        {
+            "course_code": "ABGFTU",
+            "department": "172",
+            "outcome": "Formulera en argumentation baserat p\u00e5 evidens .",
+            "similarity": 0.2106020450592041,
+            "matched_chunk": "Fokus ligger p\u00e5 samspelet mellan tradition och social och ekonomisk f\u00f6r\u00e4ndring fr\u00e5n slutet av 1800-talet till nutid.",
+            "category": "True Misalignment"
+        },
+        {
+            "course_code": "GE2024",
+            "department": "463",
+            "outcome": "Du ska kunna exemplifiera icke .",
+            "similarity": 0.21445444226264954,
+            "matched_chunk": "Kursen ber\u00f6r samspelet mellan naturresurser och samh\u00e4llsf\u00f6r\u00e4ndring liksom naturresursrelaterade konflikter.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "GE1013",
+            "department": "463",
+            "outcome": "Du ska kunna sydperspektiv .",
+            "similarity": 0.21562284231185913,
+            "matched_chunk": "Utvecklingsfr\u00e5gor utifr\u00e5n fattiga respektive rika l\u00e4nders och gruppers perspektiv.",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "JKA902",
+            "department": "172",
+            "outcome": "Du ska kunna kommunicera fakta inom omr\u00e5det muntligt och skriftligt .",
+            "similarity": 0.21940094232559204,
+            "matched_chunk": "I denna prim\u00e4rt feminina poetiska och narrativa diskurs tas k\u00e4rlek och motst\u00e5nd som figurer upp f\u00f6r tolkning och omtolkning i en diskussion kring centrala teman och begrepp.",
+            "category": "True Misalignment"
+        },
+        {
+            "course_code": "ABGFTU",
+            "department": "172",
+            "outcome": "Kommunicera effektivt i en muntlig presentation .",
+            "similarity": 0.22171379625797272,
+            "matched_chunk": "Fokus ligger p\u00e5 samspelet mellan tradition och social och ekonomisk f\u00f6r\u00e4ndring fr\u00e5n slutet av 1800-talet till nutid.",
+            "category": "True Misalignment"
+        }
+    ],
+    "lowest_content_to_ilos": [
+        {
+            "course_code": "FK4024",
+            "department": "402",
+            "chunk": "MOM2.",
+            "similarity": 0.041778430342674255,
+            "matched_outcome": "Du ska kunna kritisk granska, diskutera och anv\u00e4nda olika k\u00e4llor relevanta f\u00f6r fr\u00e5gor om h\u00e5llbar utveckling och samh\u00e4llets s\u00e5rbarhet .",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "PS2211",
+            "department": "308",
+            "chunk": "14.",
+            "similarity": 0.04816963151097298,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "PS2214",
+            "department": "308",
+            "chunk": "14.",
+            "similarity": 0.050439588725566864,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "PS2211",
+            "department": "308",
+            "chunk": "15.",
+            "similarity": 0.055396080017089844,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "MM5015",
+            "department": "403",
+            "chunk": "LaTeX.",
+            "similarity": 0.05722278356552124,
+            "matched_outcome": "Du ska kunna visa insikter i begreppet vetenskaplighet .",
+            "category": "Pre-processing error"
+        },
+        {
+            "course_code": "MM521U",
+            "department": "403",
+            "chunk": "LaTeX.",
+            "similarity": 0.05722278356552124,
+            "matched_outcome": "Du ska kunna visa insikter i begreppet vetenskaplighet .",
+            "category": ""
+        },
+        {
+            "course_code": "MM7033",
+            "department": "403",
+            "chunk": "Hilberts bassats.",
+            "similarity": 0.058340445160865784,
+            "matched_outcome": "Du ska kunna beskriva, analysera och formulera grundl\u00e4ggande bevis inom de delar som kursen behandlar .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2211",
+            "department": "308",
+            "chunk": "11.",
+            "similarity": 0.05874745547771454,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2211",
+            "department": "308",
+            "chunk": "13.",
+            "similarity": 0.05960598587989807,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2214",
+            "department": "308",
+            "chunk": "13.",
+            "similarity": 0.059606004506349564,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2211",
+            "department": "308",
+            "chunk": "10.",
+            "similarity": 0.06010393053293228,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2211",
+            "department": "308",
+            "chunk": "12.",
+            "similarity": 0.0826108381152153,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2214",
+            "department": "308",
+            "chunk": "12.",
+            "similarity": 0.08261091262102127,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": ""
+        },
+        {
+            "course_code": "FK4025",
+            "department": "402",
+            "chunk": "FYSV.",
+            "similarity": 0.088531494140625,
+            "matched_outcome": "PRO1, PRO2 och PRO3. Programmering f\u00f6r fysiker Efter att ha genomg\u00e5tt momenten f\u00f6rv\u00e4ntas studenten kunna * sj\u00e4lvst\u00e4ndigt och i grupp l\u00f6sa fysikproblem genom att konstruera program p\u00e5 upp till femhundra rader i ett modernt programspr\u00e5k .",
+            "category": ""
+        },
+        {
+            "course_code": "FV1022",
+            "department": "120",
+            "chunk": "Kulturteoretiska, teknologiska, intermediala och politiska perspektiv p\u00e5 modernitet och tradition inom japansk film relateras till begreppens roll i andra l\u00e4nders filmhistoria.",
+            "similarity": 0.09169826656579971,
+            "matched_outcome": "Du ska kunna studenten ha till\u00e4gnat sig .",
+            "category": ""
+        },
+        {
+            "course_code": "FK5021",
+            "department": "402",
+            "chunk": "EXPL.",
+            "similarity": 0.09435754269361496,
+            "matched_outcome": "Du ska kunna demonstrera grundl\u00e4ggande f\u00e4rdighet att skriftligt och muntligt redovisa ett experiment och dess resultat .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2211",
+            "department": "308",
+            "chunk": "Endast ett urval av nedanst\u00e5ende delkurser ges varje termin.",
+            "similarity": 0.09797218441963196,
+            "matched_outcome": "Du ska ha kompletterande och f\u00f6rdjupade kunskaper om teorier, metoder och resultat inom n\u00e5gra viktiga omr\u00e5den av psykologin .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2214",
+            "department": "308",
+            "chunk": "Endast ett urval av nedanst\u00e5ende delkurser ges varje termin.",
+            "similarity": 0.09797218441963196,
+            "matched_outcome": "Du ska ha kompletterande och f\u00f6rdjupade kunskaper om teorier, metoder och resultat inom n\u00e5gra viktiga omr\u00e5den av psykologin .",
+            "category": ""
+        },
+        {
+            "course_code": "JU898A",
+            "department": "220",
+            "chunk": "Deltagarantalet \u00e4r p\u00e5 grund av undervisningsformen begr\u00e4nsat till 30 studerande.",
+            "similarity": 0.09939374774694443,
+            "matched_outcome": "Du ska kunna visa f\u00f6rdjupad kunskap i och f\u00f6rst\u00e5else av migrationsr\u00e4ttsliga regelverket i svensk r\u00e4tt .",
+            "category": ""
+        },
+        {
+            "course_code": "MM7033",
+            "department": "403",
+            "chunk": "Zorns lemma.",
+            "similarity": 0.10143803060054779,
+            "matched_outcome": "Du ska kunna beskriva, analysera och formulera grundl\u00e4ggande bevis inom de delar som kursen behandlar .",
+            "category": ""
+        },
+        {
+            "course_code": "AS1004",
+            "department": "401",
+            "chunk": "Kan vi i s\u00e5 fall f\u00e5 kontakt med dem?",
+            "similarity": 0.10503455996513367,
+            "matched_outcome": "Du ska kunna redog\u00f6ra f\u00f6r de vetenskapliga argumenten f\u00f6r och emot existensen av intelligent liv p\u00e5 andra planeter och hur en eventuell kontakt med andra civilisationer kan \u00e4ga rum .",
+            "category": ""
+        },
+        {
+            "course_code": "MM8036",
+            "department": "403",
+            "chunk": "Curry-Howard-isomorfin.",
+            "similarity": 0.11014492064714432,
+            "matched_outcome": "Du ska kunna redog\u00f6ra f\u00f6r och bevisa grundl\u00e4ggande satser om olika typteori och lambdakalkyl och deras semantik .",
+            "category": ""
+        },
+        {
+            "course_code": "MM7023",
+            "department": "403",
+            "chunk": "Rices sats.",
+            "similarity": 0.11551401019096375,
+            "matched_outcome": "Redog\u00f6ra f\u00f6r och bevisa satser om (o)avg\u00f6rbarhet samt till\u00e4mpa dessa p\u00e5 problem inom matematik .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2214",
+            "department": "308",
+            "chunk": "10.",
+            "similarity": 0.11627887934446335,
+            "matched_outcome": "Du ska ha kunskap om m\u00f6jliga till\u00e4mpningar av teorier, metoder och resultat inom psykologin .",
+            "category": ""
+        },
+        {
+            "course_code": "NS7089",
+            "department": "154",
+            "chunk": "Vad  f\u00f6r\u00e4ndras och varf\u00f6r?",
+            "similarity": 0.11682908236980438,
+            "matched_outcome": "Du ska kunna f\u00f6rm\u00e5ga att v\u00e4rdera och kritiskt f\u00f6rh\u00e5lla sig till teorier och till metoders anv\u00e4ndbarhet och begr\u00e4nsningar inom \u00e4mnesomr\u00e5det .",
+            "category": ""
+        },
+        {
+            "course_code": "FK5021",
+            "department": "402",
+            "chunk": "EXPF.",
+            "similarity": 0.12007610499858856,
+            "matched_outcome": "Du ska kunna demonstrera grundl\u00e4ggande f\u00e4rdighet att skriftligt och muntligt redovisa ett experiment och dess resultat .",
+            "category": ""
+        },
+        {
+            "course_code": "EC7311",
+            "department": "305",
+            "chunk": "behandlas.",
+            "similarity": 0.12858135998249054,
+            "matched_outcome": "Efter genomg\u00e5ngen kurs skall studenten kunna beskriva den ekonomiska integrationsprocessen i Europa, samt vilka effekter denna process har p\u00e5 Europas ekonomier .",
+            "category": ""
+        },
+        {
+            "course_code": "MM7033",
+            "department": "403",
+            "chunk": "\u00c4ndliga kroppar.",
+            "similarity": 0.12876126170158386,
+            "matched_outcome": "Du ska kunna beskriva, analysera och formulera grundl\u00e4ggande bevis inom de delar som kursen behandlar .",
+            "category": ""
+        },
+        {
+            "course_code": "BE7013",
+            "department": "403",
+            "chunk": "Adaption.",
+            "similarity": 0.12933477759361267,
+            "matched_outcome": "Du ska kunna analysera ber\u00e4kningars effektivitet och noggrannhet .",
+            "category": ""
+        },
+        {
+            "course_code": "PS2214",
+            "department": "308",
+            "chunk": "11.",
+            "similarity": 0.13111776113510132,
+            "matched_outcome": "Du ska ha kompletterande och f\u00f6rdjupade kunskaper om teorier, metoder och resultat inom n\u00e5gra viktiga omr\u00e5den av psykologin .",
+            "category": ""
+        }
+    ]
+}
