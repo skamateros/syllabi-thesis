@@ -128,8 +128,8 @@ def main():
     device = torch.device('mps' if torch.mps.is_available() else 'cpu')
     print(f'Using device: {device}')
 
-    method = 'tfidf'  # 'sbert', 'tfidf', or 'hybrid'
-    reverse = True  # If True, retrieves outcomes given content. If False, retrieves content given outcomes.
+    method = 'sbert'  # 'sbert', 'tfidf', or 'hybrid'
+    reverse = False  # If True, retrieves outcomes given content. If False, retrieves content given outcomes.
 
     if reverse:
         print("Retrieving outcomes given content...")

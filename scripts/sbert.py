@@ -29,8 +29,16 @@ def get_sentences(text):
         for placeholder, abbr in placeholder_map.items():
             sentence = sentence.replace(placeholder, abbr)
         restored.append(sentence.strip())
-
-    return [s for s in restored if s]
+    
+    final = []
+    for sentence in restored:
+        if re.search(r'•', sentence):
+            sub_sentences = re.split(r'•', sentence)
+            final.extend([sub.strip() for sub in sub_sentences if sub.strip()])
+        else:
+            final.append(sentence)
+        
+    return [s for s in final if s]
 
 # Custom JSON Encoder to handle pytorch tensors
 class TensorEncoder(json.JSONEncoder):
